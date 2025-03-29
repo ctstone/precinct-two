@@ -310,6 +310,18 @@
     .sort(() => Math.random() - 0.5)
     .forEach((card, i) => {
       card.setAttribute('style', `order: ${i}`);
+      // look for image-list-group-image
+      const row = card.querySelector('.row');
+      if (row) {
+        const image = row.querySelector('div');
+        if (image) {
+          if (i % 2 === 0) {
+            image.classList.remove('image-list-group-image');
+          } else {
+            image.classList.add('image-list-group-image');
+          }
+        }
+      }
     });
 </script>
 
