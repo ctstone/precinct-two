@@ -1,0 +1,112 @@
+:root {
+  --navbar-color1: #004e80;
+  --navbar-color2: #ACE1AF;
+  --navbar-color3: #023047;
+
+  --background-color1: #87A96B;
+  --background-color2: #606c38;
+
+  --text-background-color1: #588157;
+  --text-background-color2: #ACE1AF;
+  --text-background-color3: #bcdca5;
+  --text-background-color4: #c8cd8a;
+  --text-background-color5: #d8dbac;
+
+  --menu-link-hover-color: #abc6dc;
+
+  --background-color: var(--background-color1);
+  --navbar-color: var(--navbar-color3);
+  --text-background-color: var(--text-background-color3);
+}
+
+body {
+  background-color: var(--background-color)
+}
+
+.flex-equal>* {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal>* {
+    flex: 1;
+  }
+}
+
+.icon-link>i {
+  width: .75em;
+  height: .75em;
+}
+
+img {
+  height: 50%;
+}
+
+nav {
+  background-color: var(--navbar-color);
+}
+
+.nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: var(--menu-link-hover-color);
+}
+
+.card {
+  background-color: var(--text-background-color);
+}
+
+.offcanvas-body {
+  background-color: var(--background-color);
+}
+
+.offcanvas-header {
+  color: #364958;
+}
+
+.candidates {
+  background-image: url(/img/candidates.jpeg);
+  background-size: cover;
+  height: 200px;
+  background-position: center 30%;
+}
+
+.candidate-names {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: x-large;
+  display: none;
+  background-color: #55574c;
+}
+
+.candidates-overlay {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .offcanvas-body {
+    background-color: inherit;
+  }
+}
+
+@media (min-width: 1216px) {
+  .candidates {
+    height: 550px;
+    background-position: center 20%;
+  }
+
+  .candidate-names {
+    display: flex;
+  }
+
+  .candidates-overlay {
+    display: block;
+  }
+}

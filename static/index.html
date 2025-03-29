@@ -3,97 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Brookline, MA - Precinct 2 Candidates</title>
+  <title>Precinct 2 - Brookline, MA</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/89ee628f5b.js" crossorigin="anonymous"></script>
-  <style>
-    :root {
-      --navbar-color1: #004e80;
-      --navbar-color2: #ACE1AF;
-      --navbar-color3: #023047;
-
-      --background-color1: #87A96B;
-      --background-color2: #606c38;
-
-      --text-background-color1: #588157;
-      --text-background-color2: #ACE1AF;
-      --text-background-color3: #bcdca5;
-      --text-background-color4: #c8cd8a;
-      --text-background-color5: #d8dbac;
-
-      --menu-link-hover-color: #abc6dc;
-
-      --background-color: var(--background-color1);
-      --navbar-color: var(--navbar-color3);
-      --text-background-color: var(--text-background-color3);
-    }
-
-    body {
-      background-color: var(--background-color)
-    }
-    .flex-equal>* {
-      flex: 1;
-    }
-
-    @media (min-width: 768px) {
-      .flex-md-equal>* {
-        flex: 1;
-      }
-    }
-
-    .icon-link>i {
-      width: .75em;
-      height: .75em;
-    }
-
-    img {
-      height: 50%;
-    }
-
-    nav {
-      background-color: var(--navbar-color);
-    }
-    .nav-link, .navbar-brand, .navbar-toggler {
-      color: white;
-    }
-    .nav-link:hover {
-      background-color: var(--menu-link-hover-color);
-    }
-    .card {
-      background-color: var(--text-background-color);
-    }
-
-    .offcanvas-body {
-      background-color: var(--background-color);
-    }
-
-    @media (min-width: 768px) {
-      .offcanvas-body {
-        background-color: inherit;
-      }
-    }
-
-    .offcanvas-header {
-      color: #364958;
-    }
-
-    .candidates {
-      background-image: url(img/IMG_1915.jpeg); background-size: cover; background-position: center 20%;
-      height:550px
-    }
-
-  </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md sticky-top">
     <div class="container">
-      <a class="navbar-brand d-md-none" href="#">
-         <img src="img/b4e-logo-new2.png" style="height:50px">
+      <a class="navbar-brand d-md-none" href="/">
+        <img src="/img/b4e-logo-new2.png" style="height:50px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
         aria-controls="offcanvas" aria-label="Toggle navigation">
@@ -137,19 +61,23 @@
   </nav>
 
   <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
-    <div class="text-white">
+    <div class="text-white candidates-overlay">
       <h1 class="display-3 fw-bold">Precinct Two</h1>
       <h3 class="fw-normal mb-3">Brookline Town Meeting</h3>
     </div>
-    <div>
-      testing
+    <div class="justify-content-around candidate-names">
+      <div class="text-white">Esther Gruesz</div>
+      <div class="text-white">Lauren Shebairo</div>
+      <div class="text-white">Colleen Newsome</div>
+      <div class="text-white">Elise Couture-Stone</div>
+      <div class="text-white">Megan Hinman</div>
     </div>
   </div>
 
   <div class="card m-3">
     <div class="row g-0">
       <div class="col-md-8">
-        <img src="img/coolidge-corner.png" class="img-fluid rounded-start" alt="Coolidge Corner in Brookline, MA">
+        <img src="/img/coolidge-corner.png" class="img-fluid rounded-start" alt="Coolidge Corner in Brookline, MA">
       </div>
       <div class="col-md-4 card-container">
         <div class="card-body text-muted" >
@@ -173,7 +101,7 @@
         </div>
       </div>
       <div class="col-md-8">
-        <img src="img/coolidge-corner-theater.png" class="img-fluid rounded-start" alt="...">
+        <img src="/img/coolidge-corner-theater.png" class="img-fluid rounded-start" alt="...">
       </div>
     </div>
   </div>
@@ -181,7 +109,7 @@
   <div class="card m-3">
     <div class="row g-0">
       <div class="col-md-8">
-        <img src="img/map.png" class="img-fluid rounded-start" alt="...">
+        <img src="/img/map.png" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-4">
         <div class="card-body text-muted">
@@ -197,8 +125,8 @@
     </div>
   </div>
 
-  <footer class="container py-3">
-    <a href="#">Privacy policy</a>
+  <footer class="px-2 py-3">
+    <a href="/privacy">Privacy policy</a>
   </footer>
 </body>
 
