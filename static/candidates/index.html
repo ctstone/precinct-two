@@ -38,13 +38,13 @@
                 </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/candidates">
+                  <a class="nav-link nav-link-active" href="/candidates">
                 <i class="fa-duotone fa-regular fa-face-smile-hearts fa-beat"></i>
                 Meet the Candidates
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/issues">
+              <a class="nav-link" href="/challenges-ahead">
                 <i class="fa-duotone fa-solid fa-building-columns"></i>
                 Challenges Ahead
               </a>
@@ -73,9 +73,9 @@
   </nav>
 
   <h1 class="m-4">Meet the Candidates for Brookline Town Meeting, Precinct 2</h1>
-  
-  <div class="candidates-list mx-4">
-    <div class="card mb-3">
+
+  <div class="mx-4 d-flex flex-column">
+    <div class="card mb-3 p-2" id="esther">
       <div class="row g-0">
         <div class="col-md-3">
           <img src="/img/esther.jpeg" class="img-fluid rounded" alt="...">
@@ -113,9 +113,12 @@
         </div>
       </div>
     </div>
-  
-    <div class="card mb-3">
+
+    <div class="card mb-3 p-2" id="lauren">
       <div class="row g-0">
+        <div class="col-md-3 image-list-group-image">
+          <img src="/img/lauren-2.jpeg" class="img-fluid rounded" alt="...">
+        </div>
         <div class="col-md-9">
           <div class="card-body">
             <h4 class="card-title" style="font-weight: bold;">
@@ -153,13 +156,10 @@
             </p>
           </div>
         </div>
-        <div class="col-md-3">
-          <img src="/img/lauren-2.jpeg" class="img-fluid rounded" alt="...">
-        </div>
       </div>
     </div>
-  
-    <div class="card mb-3">
+
+    <div class="card mb-3 p-2" id="colleen">
       <div class="row g-0">
         <div class="col-md-3">
           <img src="/img/colleen-3.jpeg" class="img-fluid rounded" alt="...">
@@ -206,9 +206,12 @@
         </div>
       </div>
     </div>
-  
-    <div class="card mb-3">
+
+    <div class="card mb-3 p-2" id="elise">
       <div class="row g-0">
+        <div class="col-md-3 image-list-group-image">
+          <img src="/img/elise-2.jpeg" class="img-fluid rounded" alt="...">
+        </div>
         <div class="col-md-9">
           <div class="card-body">
             <h4 class="card-title" style="font-weight: bold;">
@@ -247,13 +250,10 @@
             </p>
           </div>
         </div>
-        <div class="col-md-3">
-          <img src="/img/elise-2.jpeg" class="img-fluid rounded" alt="...">
-        </div>
       </div>
     </div>
-  
-    <div class="card mb-3">
+
+    <div class="card mb-3 p-2" id="megan">
       <div class="row g-0">
         <div class="col-md-3">
           <img src="/img/megan.jpeg" class="img-fluid rounded" alt="...">
@@ -299,9 +299,18 @@
     </div>
   </div>
 
-  <footer class="px-1 py-3">
-    <a href="/privacy">Privacy policy</a>
+  <footer class="px-2 py-3 text-center">
+    <a href="/privacy" class="text-muted small">Privacy policy</a>
   </footer>
 </body>
+
+<script>
+  // randomize the order
+  Array.from(document.querySelectorAll('.card'))
+    .sort(() => Math.random() - 0.5)
+    .forEach((card, i) => {
+      card.setAttribute('style', `order: ${i}`);
+    });
+</script>
 
 </html>

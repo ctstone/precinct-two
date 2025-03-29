@@ -33,6 +33,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="fa-duotone fa-solid fa-house"></i>
+                <span class="only-on-mobile">Home</span>
               </a>
               </li>
               <li class="nav-item">
@@ -42,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/issues">
+              <a class="nav-link" href="/challenges-ahead">
                 <i class="fa-duotone fa-solid fa-building-columns"></i>
                 Challenges Ahead
               </a>
@@ -73,24 +74,24 @@
   <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
     <div class="text-white candidates-overlay">
       <h1 class="display-3 fw-bold">Precinct Two</h1>
-      <h3 class="fw-normal mb-3">Brookline Town Meeting</h3>
+      <h3 class="fw-normal text-white mb-3">Brookline Town Meeting</h3>
     </div>
     <div class="justify-content-around candidate-names">
-      <div class="text-white">Esther Gruesz</div>
-      <div class="text-white">Lauren Shebairo</div>
-      <div class="text-white">Colleen Newsome</div>
-      <div class="text-white">Elise Couture-Stone</div>
-      <div class="text-white">Megan Hinman</div>
+      <div><a href="/candidates#esther">Esther Gruesz</a></div>
+      <div><a href="/candidates#lauren">Lauren Shebairo</a></div>
+      <div><a href="/candidates#colleen">Colleen Newsome</a></div>
+      <div><a href="/candidates#elise">Elise Couture-Stone</a></div>
+      <div><a href="/candidates#megan">Megan Hinman</a></div>
     </div>
   </div>
 
-  <div class="card m-3">
+  <div class="card m-3 p-2">
     <div class="row g-0">
       <div class="col-md-8">
-        <img src="/img/coolidge-corner.png" class="img-fluid rounded-start" alt="Coolidge Corner in Brookline, MA">
+        <img src="/img/istockphoto-1332235868-1024x1024.jpg" class="img-fluid rounded" alt="Coolidge Corner in Brookline, MA">
       </div>
       <div class="col-md-4 card-container">
-        <div class="card-body text-muted" >
+        <div class="card-body text-muted">
           <h5 class="card-title">Meet the Candidates</h5>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus justo, tincidunt in congue sed, convallis sed dolor. Donec ornare lacus non pulvinar sollicitudin. Pellentesque non justo nec nulla dignissim aliquet.</p>
           <p class="card-text">Quisque est mi, feugiat a dolor quis, ultrices commodo mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Sed nibh metus, posuere at risus ac, volutpat aliquam augue.</p>
@@ -101,8 +102,11 @@
     </div>
   </div>
 
-  <div class="card m-3">
+  <div class="card m-3 p-2">
     <div class="row g-0">
+      <div class="col-md-6 image-list-group-image">
+        <img src="/img/theater.jpeg" class="img-fluid rounded" alt="...">
+      </div>
       <div class="col-md-6">
         <div class="card-body text-muted">
           <h5 class="card-title">Issues and policies</h5>
@@ -110,16 +114,13 @@
           <p class="card-text">Duis facilisis finibus erat, eu volutpat orci interdum a. Curabitur mauris metus, aliquet malesuada sem ut, rhoncus pellentesque diam. Quisque sollicitudin, ante eget ultricies interdum, erat mauris dapibus orci, vel pulvinar est risus ut velit. Fusce ut lacus at ligula condimentum condimentum et sit amet nunc. Cras sed cursus nisi. Ut pretium sed odio imperdiet ultricies. Fusce gravida ac sem at finibus. Suspendisse semper felis at neque accumsan, a luctus eros volutpat. Morbi suscipit tristique ante, at luctus nunc. Donec ornare eros in turpis egestas pharetra. Integer vulputate lacus vestibulum velit rutrum, at molestie magna egestas. Sed magna enim, auctor sit amet finibus at, dignissim vel ante. Nullam sed ipsum massa. Mauris a felis at quam aliquet porttitor sollicitudin in arcu. Ut hendrerit elementum orci at porttitor. Aenean suscipit feugiat arcu quis suscipit.</p>
         </div>
       </div>
-      <div class="col-md-6">
-        <img src="/img/theater.jpeg" class="img-fluid rounded-start" alt="...">
-      </div>
     </div>
   </div>
 
-  <div class="card m-3">
+  <div class="card m-3 p-2">
     <div class="row g-0">
       <div class="col-md-8">
-        <img src="/img/map.png" class="img-fluid rounded-start" alt="...">
+        <img src="/img/map.png" class="img-fluid rounded" alt="...">
       </div>
       <div class="col-md-4">
         <div class="card-body text-muted">
@@ -135,8 +136,8 @@
     </div>
   </div>
 
-  <footer class="px-2 py-3">
-    <a href="/privacy">Privacy policy</a>
+  <footer class="px-2 py-3 text-center">
+    <a href="/privacy" class="text-muted small">Privacy policy</a>
   </footer>
 </body>
 

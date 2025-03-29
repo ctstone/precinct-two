@@ -57,11 +57,14 @@ nav {
 .nav-link,
 .navbar-brand,
 .navbar-toggler {
-  color: white;
+  color: #ebe3da;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-active {
+  color: black;
   background-color: var(--menu-link-hover-color);
+  border-radius: 5px;
 }
 
 .card {
@@ -74,6 +77,7 @@ nav {
 
 .offcanvas-header {
   color: #364958;
+  background-color: #ebe3da;
 }
 
 .candidates {
@@ -93,6 +97,14 @@ nav {
   display: none;
   background-color: #55574c;
 }
+.candidate-names a {
+  color: #ebe3da;
+  text-decoration: none;
+}
+
+.candidate-names a:hover {
+  color: var(--bs-primary);
+}
 
 .candidates-overlay {
   display: none;
@@ -101,10 +113,24 @@ nav {
 .social-link {
   font-size: 32px;
 }
+.image-list-group-image {
+  order: inherit;
+}
+
+.only-on-mobile {
+  display: initial;
+}
 @media (min-width: 768px) {
   .offcanvas-body {
     background-color: inherit;
   }
+                                .image-list-group-image {
+                                  order: 2;
+                                }
+                
+                                .only-on-mobile {
+                                  display: none;
+                                }
 }
 
 @media (min-width: 1216px) {
