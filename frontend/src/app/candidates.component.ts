@@ -90,7 +90,7 @@ export class CandidatesComponent {
     {
       name: 'Megan Hinman',
       id: 'megan',
-      image: 'megan.jpeg',
+      image: 'Hinman Headshot2.jpeg',
       paragraphs: [
         'I&rsquo;m running for Town Meeting because I believe Brookline should be a community where everyone—young families, seniors, public employees and lifelong residents—can afford to live and thrive. Rising housing costs are pushing too many of our neighbors out, threatening the diversity and vibrancy that make Brookline so special. I support affordable housing because stable, accessible homes strengthen our schools, local businesses, and social fabric. I&rsquo;m committed to making thoughtful, community-driven decisions that ensure Brookline remains a welcoming, inclusive place for all.',
         'As a long-time Brookline resident, single mother of two, and former public-school teacher, I&rsquo;ve always valued our town&rsquo;s exceptional schools and progressive values. I want to be actively involved in shaping the decisions that impact my family and our community—especially when it comes to issues addressing housing affordability and climate change. The ability to stay in Brookline shouldn&rsquo;t depend on financial privilege. My own experience has made me acutely aware of the challenges individuals and families face in securing stable, affordable housing here. I believe we can embrace thoughtful, community-driven planning that preserves Brookline&rsquo;s historic charm while ensuring it remains a diverse and inclusive town where all can thrive.'
