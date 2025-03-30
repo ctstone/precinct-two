@@ -1,16 +1,21 @@
 import express from 'express';
 import { join } from 'node:path';
+import { readFileSync } from 'node:fs'
 
 const PORT = process.env.PORT || 3000;
 const __dirname = import.meta.dirname;
+const staticDir = join(__dirname, '..', 'static', 'browser');
 
-// start a static server
+function defaultContent(filePath, contentType) {
+  const content = readFileSync(filePath, 'utf-8');
+  return (_, res) => res.set('content-type', contentType).send(content)
+}
+
 const app = express();
-app.use(express.static(join(__dirname, '..', 'static', 'browser')));
-
-// app.use(express.static(join(__dirname, '..', 'static')));
-// app.use('/css/bootstrap.min.css', express.static(join(__dirname, '..', 'node_modules', 'bootstrap', 'dist', 'css', 'bootstrap.min.css')));
-// app.use('/js/bootstrap.min.js', express.static(join(__dirname, '..', 'node_modules', 'bootstrap', 'dist', 'js', 'bootstrap.min.js')));
-app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+app
+  .use(
+    express.static(staticDir, { fallthrough: true }),
+    defaultContent(join(staticDir, 'index.html'), 'text/html'))
+  .listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+  });
