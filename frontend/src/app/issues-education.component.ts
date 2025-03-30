@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'p2-donate',
+  selector: 'p2-issues-education',
   imports: [],
   template: `
-    <h1 class="m-4">Donate</h1>
+    <h1 class="m-4">Education</h1>
   `,
   styles: ``
 })
-export class DonateComponent {
+export class IssuesEducationComponent {
 
 }

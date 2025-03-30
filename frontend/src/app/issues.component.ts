@@ -8,7 +8,7 @@ import { CardComponent } from './card.component';
     <h1 class="m-4">Challenges Ahead</h1>
 
     @for (issue of issues; track issue.name; let i = $index) {
-      <p2-card [cardTitle]="issue.name" imageUrl="img/issues/{{issue.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
+      <p2-card [cardTitle]="issue.name" [link]="issue.link" imageUrl="img/issues/{{issue.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
         <p class="card-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu augue velit. Nulla euismod, tortor eu
           imperdiet efficitur, nulla magna aliquet odio, id tincidunt quam metus nec augue. Etiam molestie a justo
@@ -43,26 +43,32 @@ export class IssuesComponent {
     {
       name: 'Housing',
       image: 'IMG_7055.jpeg',
+      link: 'housing',
     },
     {
       name: 'Fiscal Responsibility',
       image: 'IMG_7055.jpeg',
+      link: 'fiscal-responsibility',
     },
     {
       name: 'Climate',
       image: 'IMG_7462.jpeg',
+      link: 'climate',
     },
     {
       name: 'Education',
       image: 'IMG_3069.jpeg',
+      link: 'education',
     },
     {
       name: 'Transportation',
       image: 'istockphoto-1311429427-1024x1024.jpg',
+      link: 'transportation',
     },
     {
       name: 'Economic Development',
       image: 'IMG_7281.jpeg',
+      link: 'economic-development',
     },
   ]
 }

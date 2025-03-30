@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
   selector: 'p2-endorsements',
   imports: [],
   template: `
-    <p>
-      endorsements works!
-    </p>
+    <h1 class="m-4">Endorsements</h1>
   `,
   styles: ``
 })

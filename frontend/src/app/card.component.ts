@@ -1,27 +1,52 @@
 import { Component, computed, input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'p2-card',
-  imports: [],
+  imports: [RouterModule],
   template: `
     <div class="card m-3 p-2">
       <div class="row g-0">
         <div class="col-md-{{imageWidth()}} align-self-center" [class.image-list-group-image]="stagger()">
-          <img [src]="imageUrl()" class="img-fluid rounded">
+          @if (link(); as link) {
+            <a [routerLink]="link">
+              <img [src]="imageUrl()" class="img-fluid rounded">
+            </a>
+          } @else {
+            <img [src]="imageUrl()" class="img-fluid rounded">
+          }
         </div>
         <div class="col-md-{{textWidth()}} card-container">
           <div class="card-body text-muted">
-            <h4 class="card-title" style="font-weight: bold;">{{cardTitle()}}</h4>
+            <h4 class="card-title" style="font-weight: bold;">
+              @if (link(); as link) {
+                <a [routerLink]="link">
+                  {{cardTitle()}}
+                </a>
+              } @else {
+                {{cardTitle()}}
+              }
+            </h4>
             <ng-content />
           </div>
         </div>
       </div>
     </div>
   `,
-  styles: ``
+  styles: `
+    .card a {
+      color: inherit;
+      text-decoration:none;
+      &:hover {
+        text-decoration: underline;
+        color: #5c84ae;
+      }
+    }
+  `
 })
 export class CardComponent {
   readonly cardTitle = input.required<string>();
+  readonly link = input<string>();
   readonly imageUrl = input.required<string>();
   readonly imageWidth = input(6);
   readonly stagger = input(false);

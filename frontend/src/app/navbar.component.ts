@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   template: `
     <nav class="navbar navbar-expand-md sticky-top">
     <div class="container">
-      <a class="navbar-brand d-md-none" href="/">
+      <a class="navbar-brand d-md-none" routerLink="/">
         <img src="/img/b4e-logo.png" style="height:50px">
       </a>
       <button class="navbar-toggler" type="button" aria-controls="offcanvas" aria-label="Toggle navigation" (click)="toggleMenu()">
@@ -35,7 +35,7 @@ import { RouterModule } from '@angular/router';
               </li>
             }
             <li class="nav-item">
-              <a class="btn btn-primary" href="/donate">
+              <a class="btn btn-primary" routerLink="donate">
                 Donate
               </a>
             </li>
