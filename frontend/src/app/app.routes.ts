@@ -12,6 +12,7 @@ import { IssuesFiscalComponent } from './issues-fiscal.component';
 import { IssuesHousingComponent } from './issues-housing.component';
 import { IssuesTransportationComponent } from './issues-transportation.component';
 import { PrivacyComponent } from './privacy.component';
+import { ThemeComponent } from './theme.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', component: MainComponent },
@@ -54,4 +55,5 @@ export const routes: Routes = [
     { path: 'voting', component: VotingComponent },
     { path: 'donate', component: DonateComponent },
     { path: 'privacy', component: PrivacyComponent },
+    { path: 'theme', component: ThemeComponent },
 ];

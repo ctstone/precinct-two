@@ -9,24 +9,10 @@ import { CardComponent } from './card.component';
 
     @for(candidate of candidates; track candidate.id; let i = $index) {
       <p2-card [cardTitle]="candidate.name" [cardId]="candidate.id" image="img/candidates/{{candidate.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu augue velit. Nulla euismod, tortor eu
-          imperdiet efficitur, nulla magna aliquet odio, id tincidunt quam metus nec augue. Etiam molestie a justo non
-          auctor. Aenean tempus libero vel sodales auctor. Integer maximus enim non nisl ultrices finibus. Proin ut
-          faucibus elit. Donec nec ex non metus viverra dignissim non sed ex. Vivamus suscipit, risus at luctus
-          ullamcorper, ligula diam fermentum augue, id viverra elit felis nec libero.
-        </p>
-        <p class="card-text">
-          Nullam accumsan eros et nibh rhoncus lobortis. Aenean consequat libero et libero dapibus egestas. Morbi ut
-          ante feugiat dolor tristique ultrices. Nulla aliquam posuere dolor non hendrerit. Donec tincidunt fermentum
-          metus, eget aliquet mi luctus at. Sed hendrerit hendrerit venenatis. Aliquam auctor risus est, tristique
-          convallis felis lobortis eu. Morbi ultrices iaculis dui, id aliquam sapien dignissim porttitor. Praesent et
-          metus sed nisi facilisis dignissim vitae eu dolor. Nam imperdiet, lectus sit amet pharetra vulputate, massa
-          orci cursus erat, quis mollis libero tortor eu dui. Maecenas sed eros sit amet urna euismod rutrum facilisis
-          at tortor. Ut elementum mi vitae mi fermentum vehicula. Aliquam erat volutpat. Nam porttitor imperdiet quam
-          et commodo. Mauris convallis tortor justo, et consequat neque laoreet ut. Suspendisse eget nisi finibus,
-          tincidunt turpis vitae, ultricies magna.
-        </p>
+        @for (paragraph of candidate.paragraphs; track paragraph) {
+          <p class="card-text">{{paragraph}}</p>
+        }
+
         <p class="card-link text-center">
           @if (candidate.instagram) {
             <a [href]="candidate.instagram" class="me-2 social-link"><i class="fa-brands fa-instagram-square"></i></a>
@@ -92,8 +78,8 @@ export class CandidatesComponent {
       id: 'elise',
       image: 'elise-2.jpeg',
       paragraphs: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu augue velit. Nulla euismod, tortor eu imperdiet efficitur, nulla magna aliquet odio, id tincidunt quam metus nec augue. Etiam molestie a justo non auctor. Aenean tempus libero vel sodales auctor. Integer maximus enim non nisl ultrices finibus. Proin ut faucibus elit. Donec nec ex non metus viverra dignissim non sed ex. Vivamus suscipit, risus at luctus ullamcorper, ligula diam fermentum augue, id viverra elit felis nec libero.',
-        'Nullam accumsan eros et nibh rhoncus lobortis. Aenean consequat libero et libero dapibus egestas. Morbi ut ante feugiat dolor tristique ultrices. Nulla aliquam posuere dolor non hendrerit. Donec tincidunt fermentum metus, eget aliquet mi luctus at. Sed hendrerit hendrerit venenatis. Aliquam auctor risus est, tristique convallis felis lobortis eu. Morbi ultrices iaculis dui, id aliquam sapien dignissim porttitor. Praesent et metus sed nisi facilisis dignissim vitae eu dolor. Nam imperdiet, lectus sit amet pharetra vulputate, massa orci cursus erat, quis mollis libero tortor eu dui. Maecenas sed eros sit amet urna euismod rutrum facilisis at tortor. Ut elementum mi vitae mi fermentum vehicula. Aliquam erat volutpat. Nam porttitor imperdiet quam et commodo. Mauris convallis tortor justo, et consequat neque laoreet ut. Suspendisse eget nisi finibus, tincidunt turpis vitae, ultricies magna.'
+        'Elise Couture-Stone believes that as a community, we can honor and preserve the beauty of our architectural landscape while embracing the hope and vitality of the future. With over 15 years of experience advocating for and preserving the Boston-area’s cultural, civic, and intellectual identity, Elise is excited to bring her experience to Brookline, where she hopes to make a real difference by leading with compassion, inclusivity, and collaboration to address the challenges ahead.',
+        'As a proud PSB parent of two, Elise is committed to supporting policies that protect our most vulnerable residents, focusing on education, affordable housing, and supporting our local businesses, all the while creating a vibrant, healthy, and sustainable community for all. She is dedicated to ensuring that all Brookline residents—regardless of income, background, or identity—have access to the resources and opportunities they need to thrive. Elise believes in the power of community and is driven by a vision for a more equitable and sustainable future for Brookline.',
       ],
       instagram: '#',
       bluesky: '#',
