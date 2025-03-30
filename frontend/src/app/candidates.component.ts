@@ -8,7 +8,7 @@ import { CardComponent } from './card.component';
     <h1 class="m-4">Meet the Candidates for Brookline Town Meeting, Precinct 2</h1>
 
     @for(candidate of candidates; track candidate.id; let i = $index) {
-      <p2-card [title]="candidate.name" imageUrl="img/candidates/{{candidate.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
+      <p2-card [cardTitle]="candidate.name" imageUrl="img/candidates/{{candidate.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
         <p class="card-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu augue velit. Nulla euismod, tortor eu
           imperdiet efficitur, nulla magna aliquet odio, id tincidunt quam metus nec augue. Etiam molestie a justo non
