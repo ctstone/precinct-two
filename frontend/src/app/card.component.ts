@@ -5,9 +5,9 @@ import { RouterModule } from '@angular/router';
   selector: 'p2-card',
   imports: [RouterModule],
   template: `
-    <div class="card m-3 p-2">
-      <div class="row g-0">
-        <div class="col-md-{{imageWidth()}} align-self-center" [class.image-list-group-image]="stagger()">
+    <div class="card m-3 p-2" [id]="cardId()">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-{{imageWidth()}}" [class.image-list-group-image]="stagger()">
           @if (link(); as link) {
             <a [routerLink]="link">
               <img [src]="imageUrl()" class="img-fluid rounded">
@@ -47,6 +47,7 @@ import { RouterModule } from '@angular/router';
 export class CardComponent {
   readonly cardTitle = input.required<string>();
   readonly link = input<string>();
+  readonly cardId = input<string>();
   readonly imageUrl = input.required<string>();
   readonly imageWidth = input(6);
   readonly stagger = input(false);

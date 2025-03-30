@@ -4,7 +4,26 @@ import { Component } from '@angular/core';
   selector: 'p2-issues-climate',
   imports: [],
   template: `
-    <h1 class="m-4">Climate</h1>
+    <div class="container">
+      <h1 class="m-4">Climate</h1>
+
+      <p>
+        <img src="img/climate/IMG_0301.jpeg" class="img-fluid rounded" />
+      </p>
+
+      <p>
+        <img src="img/climate/IMG_2260.jpeg" class="img-fluid rounded" />
+      </p>
+
+      <p>
+        <img src="img/climate/IMG_3276.jpeg" class="img-fluid rounded" />
+      </p>
+
+      <p>
+        <img src="img/climate/IMG_7647.jpeg" class="img-fluid rounded" />
+      </p>
+
+    </div>
   `,
   styles: ``
 })

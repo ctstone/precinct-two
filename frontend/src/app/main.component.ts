@@ -19,16 +19,18 @@ import { RouterModule } from '@angular/router';
       </div>
     </div>
 
-    <p2-card cardTitle="Meet the Candidates" imageUrl="img/main/istockphoto-1332235868-1024x1024.jpg">
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacus justo, tincidunt in congue sed, convallis sed dolor. Donec ornare lacus non pulvinar sollicitudin. Pellentesque non justo nec nulla dignissim aliquet.</p>
-      <p class="card-text">Quisque est mi, feugiat a dolor quis, ultrices commodo mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Sed nibh metus, posuere at risus ac, volutpat aliquam augue.</p>
-      <p class="card-text">In hac habitasse platea dictumst. Donec nec ligula id nunc efficitur fringilla. Sed ut ligula ac enim facilisis tincidunt. Donec euismod, nisi vel consectetur interdum, nisi nisi aliquet nunc, nec tincidunt nunc nisi euismod nunc. Sed ut erat non augue convallis bibendum.</p>
-      <p class="card-text">Aliquam erat volutpat. Sed euismod, nunc vel tincidunt facilisis, nunc nisl aliquet nunc, nec tincidunt nunc nisl euismod nunc. Sed ut erat non augue convallis bibendum. Donec nec ligula id nunc efficitur fringilla. Sed ut ligula ac enim facilisis tincidunt.</p>
+    <p2-card cardTitle="Meet the Candidates" imageUrl="img/main/IMG_6742.jpeg">
+      <p class="card-text">
+        Let's Elect Pro-Housing, Pro-Climate, Pro-People Candidates—Like <b>Esther</b>, <b>Lauren</b>, <b>Colleen</b>, <b>Elise</b>, and <b>Megan</b>! We, alongside our endorsement partners, advocate for a more integrated approach to housing that promotes the inclusion of residents from diverse backgrounds by prioritizing mixed-use developments near transit hubs. This would ensure equal access to essential resources, reduce reliance on cars, and lower associated costs. Not only would this approach support the affordability of living in Brookline, but it would also help mitigate climate change by reducing emissions.
+      </p>
+      <p class="card-text">
+        Brookline Town Elections are <b>Tuesday, May 6th</b>. This is a very important election. Voter turnout will be high. Your vote will determine Brookline's future!
+      </p>
     </p2-card>
 
     <p2-card cardTitle="Challenges Ahead" imageUrl="img/main/theater.jpeg" [stagger]="true" [imageWidth]="4">
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan semper scelerisque. Suspendisse non lectus ac diam consectetur bibendum. Nunc cursus mi mattis venenatis laoreet. Nunc non justo malesuada, mattis libero non, ullamcorper lacus. Nulla fermentum non ex a pharetra. Mauris vitae massa placerat, varius dui in, porta ex. Nam eleifend risus nec sem tincidunt tristique. Ut imperdiet, nulla eu dignissim sagittis, ex metus placerat nunc, ut facilisis arcu justo sit amet ligula.</p>
-      <p class="card-text">Duis facilisis finibus erat, eu volutpat orci interdum a. Curabitur mauris metus, aliquet malesuada sem ut, rhoncus pellentesque diam. Quisque sollicitudin, ante eget ultricies interdum, erat mauris dapibus orci, vel pulvinar est risus ut velit. Fusce ut lacus at ligula condimentum condimentum et sit amet nunc. Cras sed cursus nisi. Ut pretium sed odio imperdiet ultricies. Fusce gravida ac sem at finibus. Suspendisse semper felis at neque accumsan, a luctus eros volutpat. Morbi suscipit tristique ante, at luctus nunc. Donec ornare eros in turpis egestas pharetra. Integer vulputate lacus vestibulum velit rutrum, at molestie magna egestas. Sed magna enim, auctor sit amet finibus at, dignissim vel ante. Nullam sed ipsum massa. Mauris a felis at quam aliquet porttitor sollicitudin in arcu. Ut hendrerit elementum orci at porttitor. Aenean suscipit feugiat arcu quis suscipit.</p>
+      <p>The housing issue in Brookline is central to addressing the critical challenges we face. Everything—from the Town Budget to education, transportation, DEAI efforts, and environmental sustainability—are all inextricably linked to our housing needs. According to the Economic Development Advisory Board and the Economic Development and Long-Term Planning division of the Brookline Planning Department, mixed-use development near transit is the best path to increasing the Town’s revenue. To thrive as a community, we must prioritize creating more homes of all types. With over 70 percent of Brookline’s revenue coming from property taxes, increasing the housing supply will spread the tax base across more properties and relieve financial pressure on current residents.</p>
+      <p>We, alongside our endorsement partners, advocate for a more integrated approach to housing that promotes the inclusion of residents from diverse backgrounds by prioritizing mixed-use developments near transit hubs. This would ensure equal access to essential resources, reduce reliance on cars, and lower associated costs. Not only would this approach support the affordability of living in Brookline, but it would also help mitigate climate change by reducing emissions.</p>
     </p2-card>
   `,
   styles: ``

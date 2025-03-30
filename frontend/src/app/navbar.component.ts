@@ -1,5 +1,5 @@
-import { Component, ElementRef, signal, viewChild } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, ElementRef, inject, signal, viewChild } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'p2-navbar',
@@ -48,6 +48,7 @@ import { RouterModule } from '@angular/router';
   styles: ``
 })
 export class NavbarComponent {
+  readonly router = inject(Router);
   readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
   readonly menuVisible = signal(false);
   readonly links = [
@@ -56,6 +57,10 @@ export class NavbarComponent {
     { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', path: 'endorsements' },
     { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', path: 'voting' },
   ];
+
+  constructor() {
+    this.router.events.subscribe(() => this.menuVisible.set(false));
+  }
 
   toggleMenu() {
     this.menuVisible.update((prev) => !prev);
