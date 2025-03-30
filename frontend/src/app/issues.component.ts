@@ -8,7 +8,7 @@ import { CardComponent } from './card.component';
     <h1 class="m-4">Challenges Ahead</h1>
 
     @for (issue of issues; track issue.name; let i = $index) {
-      <p2-card [cardTitle]="issue.name" [link]="issue.link" imageUrl="img/issues/{{issue.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
+      <p2-card [cardTitle]="issue.name" [link]="issue.link" image="img/issues/{{issue.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
         <p class="card-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu augue velit. Nulla euismod, tortor eu
           imperdiet efficitur, nulla magna aliquet odio, id tincidunt quam metus nec augue. Etiam molestie a justo

@@ -10,18 +10,24 @@
 
     --background-color1: #87A96B;
     --background-color2: #606c38;
+    --background-color3: #d6e9f2;
 
     --text-background-color1: #588157;
     --text-background-color2: #ACE1AF;
     --text-background-color3: #bcdca5;
     --text-background-color4: #c8cd8a;
     --text-background-color5: #d8dbac;
+    --text-background-color6: #d6e9f2;
+      --text-background-color7: #ebe3da;
 
+    --names-background-color1: #55574c;
+      --names-background-color2: #005b7f;
     --menu-link-hover-color: #abc6dc;
 
     --background-color: var(--background-color1);
     --navbar-color: var(--navbar-color3);
     --text-background-color: var(--text-background-color3);
+    --names-background-color: var(--names-background-color1);
   }
 
   body {
@@ -100,7 +106,7 @@
     color: white;
     font-size: x-large;
     display: none;
-    background-color: #55574c;
+    background-color: var(--names-background-color);
   }
   .candidate-names a {
     color: #ebe3da;

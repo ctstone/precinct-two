@@ -10,10 +10,10 @@ import { RouterModule } from '@angular/router';
         <div class="col-md-{{imageWidth()}}" [class.image-list-group-image]="stagger()">
           @if (link(); as link) {
             <a [routerLink]="link">
-              <img [src]="imageUrl()" class="img-fluid rounded">
+              <img [src]="image()" class="img-fluid rounded">
             </a>
           } @else {
-            <img [src]="imageUrl()" class="img-fluid rounded">
+            <img [src]="image()" class="img-fluid rounded">
           }
         </div>
         <div class="col-md-{{textWidth()}} card-container">
@@ -48,7 +48,7 @@ export class CardComponent {
   readonly cardTitle = input.required<string>();
   readonly link = input<string>();
   readonly cardId = input<string>();
-  readonly imageUrl = input.required<string>();
+  readonly image = input.required<string>();
   readonly imageWidth = input(6);
   readonly stagger = input(false);
   readonly textWidth= computed(() => 12 - this.imageWidth());
