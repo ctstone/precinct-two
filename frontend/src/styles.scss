@@ -131,6 +131,11 @@
   .only-on-mobile {
     display: initial;
   }
+
+  .img-fluid {
+    filter: drop-shadow(8px 8px 10px gray);
+  }
+
   @media (min-width: 768px) {
     .offcanvas-body {
       background-color: inherit;
