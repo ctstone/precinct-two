@@ -8,7 +8,7 @@ import { Router, RouterModule } from '@angular/router';
     <nav class="navbar navbar-expand-md sticky-top">
     <div class="container">
       <a class="navbar-brand d-md-none" routerLink="/">
-        <img src="/img/b4e-logo.png" style="height:50px">
+        Brookline TMM - P2
       </a>
       <button class="navbar-toggler" type="button" aria-controls="offcanvas" aria-label="Toggle navigation" (click)="toggleMenu()">
         <i class="fa-duotone fa-regular fa-bars"></i>
