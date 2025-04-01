@@ -8,8 +8,8 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
     <form class="container mt-4" (ngSubmit)="save()">
       @for (prop of settings; track prop.var) {
         <div class="mb-2">
-          <input #previewColor [id]="prop.var" type="color" class="me-2" [formControl]="prop.control" />
-          <input type="text" class="me-2" style="width: 100px;text-align: center;" [formControl]="prop.control" placeholder="Hex code" (change)="updateColor(previewColor, prop.control.value)" />
+          <input #previewColor [id]="prop.var" type="color" class="me-2" [formControl]="prop.control" (change)="updateColor(textColor, prop.control.value)" />
+          <input #textColor type="text" class="me-2" style="width: 100px;text-align: center;" [formControl]="prop.control" placeholder="Hex code" (change)="updateColor(previewColor, prop.control.value)" />
           <label [for]="prop.var">{{prop.label}}</label>
         </div>
       }
@@ -31,8 +31,23 @@ export class ThemeComponent {
       control: this.fb.control('#023047'),
     },
     {
-      label: 'Header Color',
-      var: '--heading-color',
+      label: 'Header-1 Color (page title)',
+      var: '--h1-color',
+      control: this.fb.control('#023047'),
+    },
+    {
+      label: 'Header-3 Color (page subtitle)',
+      var: '--h3-color',
+      control: this.fb.control('#023047'),
+    },
+    {
+      label: 'Header-4 Color (card title)',
+      var: '--h4-color',
+      control: this.fb.control('#023047'),
+    },
+    {
+      label: 'Header-5 Color (mobile title)',
+      var: '--h5-color',
       control: this.fb.control('#023047'),
     },
     {

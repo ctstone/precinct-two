@@ -4,35 +4,40 @@
 @import 'bootstrap/scss/bootstrap';
 
 :root {
-    --navbar-color1: #004e80;
-    --navbar-color2: #ACE1AF;
-    --navbar-color3: #023047;
+--navbar-color1: #004e80;
+  --navbar-color2: #ACE1AF;
+  --navbar-color3: #023047;
 
-    --heading-color: #023047;
+--heading-color: #023047;
+--h1-color: var(--heading-color);
+  --h2-color: var(--heading-color);
+  --h3-color: var(--heading-color);
+  --h4-color: var(--heading-color);
+  --h5-color: var(--heading-color);
 
-    --donate-btn-background-color: #de5499;
-    --donate-btn-border-color: var(--bs-primary);
+--donate-btn-background-color: #de5499;
+  --donate-btn-border-color: var(--bs-primary);
 
-    --background-color1: #87A96B;
-    --background-color2: #606c38;
-    --background-color3: #d6e9f2;
-    --background-color4: #eddcd9;
+--background-color1: #87A96B;
+  --background-color2: #606c38;
+  --background-color3: #d6e9f2;
+  --background-color4: #eddcd9;
 
-    --text-background-color1: #588157;
-    --text-background-color2: #ACE1AF;
-    --text-background-color3: #bcdca5;
-    --text-background-color4: #c8cd8a;
-    --text-background-color5: #d8dbac;
-    --text-background-color6: #d6e9f2;
-    --text-background-color7: #ebe3da;
-    --text-background-color8: #f2ebe9;
+--text-background-color1: #588157;
+  --text-background-color2: #ACE1AF;
+  --text-background-color3: #bcdca5;
+  --text-background-color4: #c8cd8a;
+  --text-background-color5: #d8dbac;
+  --text-background-color6: #d6e9f2;
+  --text-background-color7: #ebe3da;
+  --text-background-color8: #f2ebe9;
 
-    --names-background-color1: #55574c;
-    --names-background-color2: #005b7f;
-    --names-background-color3: #303179;
-    --menu-link-hover-color: #abc6dc;
+--names-background-color1: #55574c;
+  --names-background-color2: #005b7f;
+  --names-background-color3: #303179;
+  --menu-link-hover-color: #abc6dc;
 
-    --background-color: var(--background-color4);
+  --background-color: var(--background-color4);
     --navbar-color: var(--navbar-color3);
     --text-background-color: var(--text-background-color8);
     --names-background-color: var(--names-background-color3);
@@ -42,14 +47,26 @@
     background-color: var(--background-color)
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
+        h1 {
+          color: var(--h1-color);
+        }
+    
+        h2 {
+          color: var(--h2-color);
+        }
+    
+        h3 {
+          color: var(--h3-color);
+        }
+    
+        h4,
   .card-title {
-    color: var(--heading-color);
-  }
+    color: var(--h4-color);
+    }
+    
+    h5 {
+      color: var(--h5-color);
+    }
   .flex-equal>* {
     flex: 1;
   }
@@ -86,7 +103,7 @@
     background-color: var(--menu-link-hover-color);
     border-radius: 5px;
   }
-  
+
   .card {
     background-color: var(--text-background-color);
   }
