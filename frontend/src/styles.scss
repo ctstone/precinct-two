@@ -9,7 +9,7 @@
     --navbar-color3: #023047;
 
     --heading-color: #023047;
-    
+
     --donate-btn-background-color: #de5499;
     --donate-btn-border-color: var(--bs-primary);
 
@@ -74,6 +74,7 @@
   }
 
   .nav-link,
+  .nav-link:focus,
   .navbar-brand,
   .navbar-toggler {
     color: #ebe3da;
@@ -85,7 +86,7 @@
     background-color: var(--menu-link-hover-color);
     border-radius: 5px;
   }
-
+  
   .card {
     background-color: var(--text-background-color);
   }
