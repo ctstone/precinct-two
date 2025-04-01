@@ -10,7 +10,7 @@ import { IssuesEconomicComponent } from './issues-economic.component';
 import { IssuesEducationComponent } from './issues-education.component';
 import { IssuesFiscalComponent } from './issues-fiscal.component';
 import { IssuesHousingComponent } from './issues-housing.component';
-import { IssuesTransportationComponent } from './issues-transportation.component';
+import { IssuesInfrastructureComponent } from './issues-infrastructure.component';
 import { PrivacyComponent } from './privacy.component';
 import { ThemeComponent } from './theme.component';
 
@@ -46,8 +46,8 @@ export const routes: Routes = [
                 component: IssuesHousingComponent,
             },
             {
-                path: 'transportation',
-                component: IssuesTransportationComponent,
+                path: 'infrastructure',
+                component: IssuesInfrastructureComponent,
             }
         ]
     },
