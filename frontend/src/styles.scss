@@ -11,6 +11,7 @@
     --background-color1: #87A96B;
     --background-color2: #606c38;
     --background-color3: #d6e9f2;
+    --background-color4: #eddcd9;
 
     --text-background-color1: #588157;
     --text-background-color2: #ACE1AF;
@@ -18,16 +19,18 @@
     --text-background-color4: #c8cd8a;
     --text-background-color5: #d8dbac;
     --text-background-color6: #d6e9f2;
-      --text-background-color7: #ebe3da;
+    --text-background-color7: #ebe3da;
+    --text-background-color8: #f2ebe9;
 
     --names-background-color1: #55574c;
-      --names-background-color2: #005b7f;
+    --names-background-color2: #005b7f;
+    --names-background-color3: #303179;
     --menu-link-hover-color: #abc6dc;
 
-    --background-color: var(--background-color1);
+    --background-color: var(--background-color4);
     --navbar-color: var(--navbar-color3);
-    --text-background-color: var(--text-background-color3);
-    --names-background-color: var(--names-background-color1);
+    --text-background-color: var(--text-background-color8);
+      --names-background-color: var(--names-background-color3);
   }
 
   body {
