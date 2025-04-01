@@ -8,7 +8,8 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
     <form class="container mt-4" (ngSubmit)="save()">
       @for (prop of settings; track prop.var) {
         <div class="mb-2">
-          <input [id]="prop.var" type="color" class="me-2" [formControl]="prop.control" placeholder="Hex code" />
+          <input #previewColor [id]="prop.var" type="color" class="me-2" [formControl]="prop.control" />
+          <input type="text" class="me-2" style="width: 100px;text-align: center;" [formControl]="prop.control" placeholder="Hex code" (change)="updateColor(previewColor, prop.control.value)" />
           <label [for]="prop.var">{{prop.label}}</label>
         </div>
       }
@@ -69,6 +70,12 @@ export class ThemeComponent {
       }
     });
     this.update();
+  }
+
+  updateColor(target: HTMLInputElement, value: string | undefined | null) {
+    if (value) {
+      target.value = value;
+    }
   }
 
   save() {
