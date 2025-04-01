@@ -8,28 +8,29 @@ import { ContentService } from './content.service';
   selector: 'p2-main',
   imports: [CardComponent, RouterModule, CommonModule],
   template: `
-    <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
-      <div class="text-white candidates-overlay">
-        <h1 class="display-3 fw-bold">Precinct Two</h1>
-        <h3 class="fw-normal text-white mb-3">Brookline Town Meeting</h3>
+      <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
+        <div class="text-white candidates-overlay">
+          <h1 class="display-3 fw-bold">Precinct Two</h1>
+          <h3 class="fw-normal text-white mb-3">Brookline Town Meeting</h3>
+        </div>
+
+        <div class="justify-content-around candidate-names">
+          @for (candidate of candidates; track candidate.id) {
+            <div><a routerLink="candidates" [fragment]="candidate.id">{{candidate.name}}</a></div>
+          }
+        </div>
       </div>
 
-      <div class="justify-content-around candidate-names">
-        @for (candidate of candidates; track candidate.id) {
-          <div><a routerLink="candidates" [fragment]="candidate.id">{{candidate.name}}</a></div>
-        }
-      </div>
+    <div class="container">
+      @for (card of cards; track card.link; let i = $index) {
+        <p2-card [cardTitle]="card.title" [link]="card.link" [image]="card.image" [stagger]="i % 2 === 1" [imageWidth]="card.imageWidth ?? 6">
+          @for (paragraph of card.text$ | async; track paragraph) {
+            <p class="card-text" [innerHTML]="paragraph"></p>
+          }
+        </p2-card>
+      }
     </div>
-
-    @for (card of cards; track card.link; let i = $index) {
-      <p2-card [cardTitle]="card.title" [link]="card.link" [image]="card.image" [stagger]="i % 2 === 1" [imageWidth]="card.imageWidth ?? 6">
-        @for (paragraph of card.text$ | async; track paragraph) {
-          <p class="card-text" [innerHTML]="paragraph"></p>
-        }
-      </p2-card>
-    }
-  `,
-  styles: ``
+  `
 })
 export class MainComponent {
   readonly content = inject(ContentService);

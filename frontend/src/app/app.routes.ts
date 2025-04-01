@@ -13,6 +13,7 @@ import { IssuesHousingComponent } from './issues-housing.component';
 import { IssuesInfrastructureComponent } from './issues-infrastructure.component';
 import { PrivacyComponent } from './privacy.component';
 import { ThemeComponent } from './theme.component';
+import { IssueComponent } from './issue.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', component: MainComponent },
@@ -26,29 +27,33 @@ export const routes: Routes = [
                 component: IssuesComponent,
             },
             {
-                path: 'climate',
-                component: IssuesClimateComponent,
-            },
-            {
-                path: 'economic-development',
-                component: IssuesEconomicComponent,
-            },
-            {
-                path: 'education',
-                component: IssuesEducationComponent,
-            },
-            {
-                path: 'fiscal-responsibility',
-                component: IssuesFiscalComponent,
-            },
-            {
-                path: 'housing',
-                component: IssuesHousingComponent,
-            },
-            {
-                path: 'infrastructure',
-                component: IssuesInfrastructureComponent,
+                path: '',
+                pathMatch: 'prefix',
+                component: IssueComponent,
+                children: [
+                    {
+                        path: 'economic-development',
+                        component: IssuesEconomicComponent,
+                    },
+                    {
+                        path: 'education',
+                        component: IssuesEducationComponent,
+                    },
+                    {
+                        path: 'fiscal-responsibility',
+                        component: IssuesFiscalComponent,
+                    },
+                    {
+                        path: 'housing',
+                        component: IssuesHousingComponent,
+                    },
+                    {
+                        path: 'infrastructure',
+                        component: IssuesInfrastructureComponent,
+                    },
+                ]
             }
+
         ]
     },
     { path: 'endorsements', component: EndorsementsComponent },

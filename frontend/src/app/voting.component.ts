@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'p2-voting',
   imports: [],
   template: `
-    <h1 class="m-4">How and where to vote</h1>
+    <div class="container">
+      <h1 class="my-4">How and where to vote</h1>
+    </div>
   `,
   styles: ``
 })

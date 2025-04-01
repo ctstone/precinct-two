@@ -18,25 +18,26 @@ interface Candidate {
   selector: 'p2-candidates',
   imports: [CardComponent, CommonModule],
   template: `
-    <h1 class="m-4">Meet the Candidates for Brookline Town Meeting, Precinct 2</h1>
+    <div class="container">
+      <h1 class="my-4">Meet the Candidates for Brookline Town Meeting, Precinct 2</h1>
 
-    @for(candidate of candidates; track candidate.id; let i = $index) {
-      <p2-card [cardTitle]="candidate.name" [cardId]="candidate.id" image="img/candidates/{{candidate.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
-        @for (paragraph of candidate.text$ | async; track paragraph) {
-          <p class="card-text" [innerHTML]="paragraph"></p>
-        }
-
-        <p class="card-link text-center">
-          @for (social of socials | keyvalue; track social.key) {
-            @if (candidate.socials.get(social.key); as socialLink) {
-              <a [href]="socialLink" class="me-2 social-link"><i class="fa-brands {{socials.get(social.key)}}"></i></a>
-            }
+      @for(candidate of candidates; track candidate.id; let i = $index) {
+        <p2-card [cardTitle]="candidate.name" [cardId]="candidate.id" image="img/candidates/{{candidate.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
+          @for (paragraph of candidate.text$ | async; track paragraph) {
+            <p class="card-text" [innerHTML]="paragraph"></p>
           }
-        </p>
-      </p2-card>
-    }
-  `,
-  styles: ``
+
+          <p class="card-link text-center">
+            @for (social of socials | keyvalue; track social.key) {
+              @if (candidate.socials.get(social.key); as socialLink) {
+                <a [href]="socialLink" class="me-2 social-link"><i class="fa-brands {{socials.get(social.key)}}"></i></a>
+              }
+            }
+          </p>
+        </p2-card>
+      }
+    </div>
+  `
 })
 export class CandidatesComponent {
   readonly content = inject(ContentService);

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <div class="container">
-      <h1 class="m-4">Climate</h1>
+      <h1>Climate</h1>
 
       <p>
         <img src="img/climate/IMG_0301.jpeg" class="img-fluid rounded" />
@@ -28,5 +28,5 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class IssuesClimateComponent {
-
+  // TODO: this component is not used
 }

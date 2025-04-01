@@ -4,7 +4,40 @@ import { Component } from '@angular/core';
   selector: 'p2-issues-infrastructure',
   imports: [],
   template: `
-    <h1 class="m-4">Environment, Sustainability, & Infrastructure</h1>
+    <h1>Environment, Sustainability, & Infrastructure</h1>
+
+    <p>Housing policies are key to tackling climate change and making sustainability a natural part of planning for our future.
+    <p>For Brookline to thrive, we need smaller, energy-efficient, transit-oriented homes where families, seniors looking to downsize, and people from all walks of life can live, work, shop, and enjoy everything our community has to offer.
+    <p>Working alongside our community partners, we know we realize this vision by supporting green building standards, using renewable energy, and ensuring new housing is built with climate resilience in mind. By focusing on density near transit and services instead of spreading out, we can help reduce the carbon footprint of transportation. Through thoughtful housing policy, we can make sustainability an integral part of our urban planning and create a future where everyone in Brookline can thrive.
+    <p>We have three pivotal tools that will help us build the future we all want to see in Brookline:
+
+    <h3>Comprehensive Planning</h3>
+    <p>This spring, Brookline will kick off the development of our new <a href="https://www.brooklinema.gov/DocumentCenter/View/44456/Comprehensive-Plan-RFP-Draft-approved-by-Planning-Process-Study-Committee-on-8-22-23">Comprehensive Plan</a>. The plan will be led by the Comprehensive Plan Steering Group, chaired by Select Board Member, <a href="https://www.paulwarren.org/meet-paul">Paul Warren</a>, and supported by consultants from the architectural firm, <a href="https://agencylp.com/">Agency Landscape and Planning</a>. The planning process started in 2023 with the formation of the <a href="https://www.brooklinema.gov/2483/Arc-Planning-Process-Study-Committee">Planning Process Study Committee</a>, which has been working hard to create an inclusive, community-driven framework. The goal is to make the process collaborative, with clear goals for the near, medium, and long term. As your representatives for Precinct 2 Town Meeting Members, we’re focused on listening to everyone in the community and using that input to shape Brookline’s future together. This will ensure that the plan reflects our shared vision and values for our beloved and historic town.
+
+    <h3>Housing Production Plan (HPP)</h3>
+    <p>Brookline’s updated Housing Production Plan is all about meeting the housing needs of our community. Our community partners have built on the first plan from 2016, and while some of its recommendations were put into action, many are still pending, and the need for more housing has only grown. That’s why we support the tenants of Warrant Article 34, which called for an updated plan. After a lot of community input and hard work, the <a href="https://www.brooklinema.gov/DocumentCenter/View/53784/BHHP2024-11-12---approved-by-state">updated plan</a> was presented to the Housing Advisory Board in November 2022, and it was officially approved by the Select Board in February 2024. The plan includes recommendations for increasing housing at all income levels, with specific sites in Brookline identified for zoning changes that will help make it happen.
+    <p>You can check out more details on the <a href="https://www.brooklinema.gov/1299/Housing-Production-Planhttps://www.brooklinema.gov/1299/Housing-Production-Plan">Town’s website</a>.
+
+    <h3>MBTA Communities Act (MBTACA)</h3>
+    <p>On November 14, 2023, 84% of Town Meeting Members voted to pass Brookline’s <a href="https://www.brooklinema.gov/DocumentCenter/View/44958/EXPLANATIONS-FOR-WA-3---4--5-MBTACA">Consensus MBTA-CA Warrant Article</a>.
+
+    <h4>What’s this warrant article all about?</h4>
+    <p>This article is about Brookline making smart, thoughtful changes to help us meet important state requirements and create more housing for people at all income levels. It’s part of the state’s MBTA Communities Act, which asks towns served by the MBTA to allow for multi-family housing near transit hubs. This article will help Brookline comply with that law and bring more affordable housing to our community, while keeping our town’s character intact.
+
+
+    <h4>Here’s what the article proposes:</h4>
+    <ol>
+      <li>New Zoning Changes: It will create a new zoning district that allows multi-family housing in existing areas designated for that purpose.
+      <li>Emerald Island District: It will make it easier to add more multi-family units in the Emerald Island district to boost housing options.
+      <li>Walnut and High Streets: It proposes new, affordable housing at the Brookline Housing Authority’s property on Walnut and High Streets.
+      <li>Harvard Street: It will create new zoning for multi-family homes along Harvard Street, supporting our growing commercial corridor.
+    </ol>
+
+    <p>Affordable Housing By-Law Update: It also adjusts our rules to better support affordable housing and make sure it’s part of the community’s growth.
+
+    <p>The goal here is to find a balance that will allow us to grow and build more affordable homes while respecting the charm of Brookline. It’s about listening to everyone in the community and working together to create something we can all be proud of.
+    <p>Through careful planning, this article aims to provide more homes for people of all income levels and make sure that new developments support a thriving, sustainable, and inclusive Brookline.
+    <p>For more details, be sure to check out the full information available on the <a href="https://www.brooklinema.gov/DocumentCenter/View/43435/v2_BRK_FBC_PublicReviewDraft_ToStaff_2023-0728">Town’s website</a>.
   `,
   styles: ``
 })
