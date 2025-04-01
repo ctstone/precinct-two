@@ -35,7 +35,7 @@ import { Router, RouterModule } from '@angular/router';
                 </li>
               }
               <li class="nav-item">
-                <a class="btn btn-primary" style="background-color:#de5499" routerLink="donate">
+                <a class="btn btn-primary" style="background-color:var(--donate-btn-background-color); border-color:var(--donate-btn-border-color)" routerLink="donate">
                   Donate
                 </a>
               </li>

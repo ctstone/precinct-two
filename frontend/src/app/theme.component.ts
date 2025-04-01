@@ -30,6 +30,21 @@ export class ThemeComponent {
       control: this.fb.control(''),
     },
     {
+      label: 'Header Color',
+      var: '--heading-color',
+      control: this.fb.control(''),
+    },
+    {
+      label: 'Donate Button Background Color',
+      var: '--donate-btn-background-color',
+      control: this.fb.control(''),
+    },
+    {
+      label: 'Donate Button Border Color',
+      var: '--donate-btn-border-color',
+      control: this.fb.control(''),
+    },
+    {
       label: 'Background color',
       var: '--background-color',
       control: this.fb.control(''),

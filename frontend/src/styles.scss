@@ -8,6 +8,11 @@
     --navbar-color2: #ACE1AF;
     --navbar-color3: #023047;
 
+    --heading-color: #023047;
+    
+    --donate-btn-background-color: #de5499;
+    --donate-btn-border-color: var(--bs-primary);
+
     --background-color1: #87A96B;
     --background-color2: #606c38;
     --background-color3: #d6e9f2;
@@ -30,7 +35,7 @@
     --background-color: var(--background-color4);
     --navbar-color: var(--navbar-color3);
     --text-background-color: var(--text-background-color8);
-      --names-background-color: var(--names-background-color3);
+    --names-background-color: var(--names-background-color3);
   }
 
   body {
@@ -43,7 +48,7 @@
   h4,
   h5,
   .card-title {
-    color: var(--navbar-color);
+    color: var(--heading-color);
   }
   .flex-equal>* {
     flex: 1;
