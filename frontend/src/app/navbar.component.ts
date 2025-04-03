@@ -20,12 +20,12 @@ import { Router, RouterModule } from '@angular/router';
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 justify-content-between">
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" routerLink="/">
                   <i class="fa-duotone fa-solid fa-house"></i>
                   <span class="only-on-mobile">Home</span>
                 </a>
-              </li> -->
+              </li>
               @for (link of links; track link.path) {
                 <li class="nav-item">
                   <a class="nav-link" [routerLink]="link.path" routerLinkActive="active">
