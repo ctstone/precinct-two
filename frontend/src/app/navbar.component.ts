@@ -20,12 +20,12 @@ import { Router, RouterModule } from '@angular/router';
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 justify-content-between">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" routerLink="/">
                   <i class="fa-duotone fa-solid fa-house"></i>
                   <span class="only-on-mobile">Home</span>
                 </a>
-              </li>
+              </li> -->
               @for (link of links; track link.path) {
                 <li class="nav-item">
                   <a class="nav-link" [routerLink]="link.path" routerLinkActive="active">
@@ -34,11 +34,11 @@ import { Router, RouterModule } from '@angular/router';
                   </a>
                 </li>
               }
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="btn btn-primary" style="background-color:var(--donate-btn-background-color); border-color:var(--donate-btn-border-color)" routerLink="donate">
                   Donate
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -52,10 +52,10 @@ export class NavbarComponent {
   readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
   readonly menuVisible = signal(false);
   readonly links = [
-    { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', path: 'candidates' },
+    // { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', path: 'candidates' },
     { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', path: 'challenges-ahead' },
-    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', path: 'endorsements' },
-    { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', path: 'voting' },
+    // { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', path: 'endorsements' },
+    // { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', path: 'voting' },
   ];
 
   constructor() {

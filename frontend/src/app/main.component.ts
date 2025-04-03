@@ -16,7 +16,8 @@ import { ContentService } from './content.service';
 
         <div class="justify-content-around candidate-names">
           @for (candidate of candidates; track candidate.id) {
-            <div><a routerLink="candidates" [fragment]="candidate.id">{{candidate.name}}</a></div>
+            <!-- <div><a routerLink="candidates" [fragment]="candidate.id">{{candidate.name}}</a></div> -->
+            <div>{{candidate.name}}</div>
           }
         </div>
       </div>
@@ -46,7 +47,7 @@ export class MainComponent {
   readonly cards = [
     {
       title: 'Meet the Candidates',
-      link: 'candidates',
+      // link: 'candidates',
       image: 'img/main/IMG_6742.jpeg',
       text$: this.content.fetch('main/meet-the-candidates.txt'),
     },
@@ -59,7 +60,7 @@ export class MainComponent {
     },
     {
       title: 'Voting',
-      link: 'voting',
+      // link: 'voting',
       image: 'img/main/map.png',
       imageWidth: 5,
       text$: this.content.fetch('main/voting.txt'),

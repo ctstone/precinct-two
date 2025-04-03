@@ -10,13 +10,13 @@ import { NavbarComponent } from './navbar.component';
 
     <router-outlet />
 
-    <div class="container">
+    <!-- <div class="container">
       <footer class="px-2 py-3 text-center">
         <a routerLink="privacy" class="text-muted small">Privacy policy</a>
         <span class="mx-2 text-muted">&bullet;</span>
         <a routerLink="theme"><i class="fa-duotone fa-solid fa-palette"></i></a>
       </footer>
-    </div>
+    </div> -->
   `,
   styles: [],
 })

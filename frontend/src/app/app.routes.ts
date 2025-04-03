@@ -56,9 +56,9 @@ export const routes: Routes = [
 
         ]
     },
-    { path: 'endorsements', component: EndorsementsComponent },
-    { path: 'voting', component: VotingComponent },
-    { path: 'donate', component: DonateComponent },
-    { path: 'privacy', component: PrivacyComponent },
+    // { path: 'endorsements', component: EndorsementsComponent },
+    // { path: 'voting', component: VotingComponent },
+    // { path: 'donate', component: DonateComponent },
+    // { path: 'privacy', component: PrivacyComponent },
     { path: 'theme', component: ThemeComponent },
 ];
