@@ -34,11 +34,11 @@ import { Router, RouterModule } from '@angular/router';
                   </a>
                 </li>
               }
-              <!-- <li class="nav-item">
-                <a class="btn btn-primary" style="background-color:var(--donate-btn-background-color); border-color:var(--donate-btn-border-color)" routerLink="donate">
+              <li class="nav-item">
+                <a class="btn btn-primary" style="background-color:var(--donate-btn-background-color); border-color:var(--donate-btn-border-color)" href="#"> <!-- routerLink="donate" -->
                   Donate
                 </a>
-              </li> -->
+              </li>
             </ul>
           </div>
         </div>
