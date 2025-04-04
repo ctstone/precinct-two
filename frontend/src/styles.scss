@@ -27,8 +27,8 @@
   --h5-color: #023047;
   --heading-color: #023047;
   --menu-link-hover-color: #abc6dc;
-  --names-background-color: #29709a;
-  --navbar-color: #f06161;
+  --names-background-color: #7891b9;
+  --navbar-color: #820660;
   --text-background-color: #f2ebe9;
 }
 
@@ -115,7 +115,7 @@ nav {
   background-size: cover;
   height: 200px;
   background-position: center 30%;
-  border: solid #c33c3a;
+  border: solid #253950;
   border-width: 2px 0 0 0;
 }
 
@@ -128,8 +128,8 @@ nav {
   font-size: x-large;
   display: none;
   background-color: var(--names-background-color);
-  border: solid #253950;
-  border-width: 2px 0 0 0;
+  border: solid #364871;
+  border-width: 2px 0 2px 0;
 }
 .candidate-names a {
   color: #ebe3da;
