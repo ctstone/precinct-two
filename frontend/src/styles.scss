@@ -3,18 +3,19 @@
 :root {
   // --heading-color: #023047;
   // --h1-color: #f6f6f6;
-  //   --h2-color: var(--heading-color);
-  //   --h3-color: #023047;
-  //     --h4-color: #c33c3a;
-  //     --h5-color: #023047;
+  // --h2-color: var(--heading-color);
+  // --h3-color: #023047;
+  // --h4-color: #c33c3a;
+  // --h5-color: #023047;
   // --donate-btn-background-color: #abbae5;
-  //   --donate-btn-border-color: #364871;
-  //   --menu-link-hover-color: #abc6dc;
-  //   --background-color: #0c3c5e;
-  //     // --navbar-color: #50043c; // plum
-  //     --navbar-color: #64043c; // wine
-  //     --text-background-color: #f6f6f6;
-  //     --names-background-color: #29709a;
+  // --donate-btn-border-color: #364871;
+  // --menu-link-hover-color: #abc6dc;
+  // --background-color: #0c3c5e;
+  // --navbar-color: #50043c; // plum
+  // --navbar-color: #64043c; // wine
+  // --text-background-color: #f6f6f6;
+  // --names-background-color: #29709a;
+
   // option2
   --background-color: #0c3c5e;
   --donate-btn-background-color: #abbae5;
@@ -28,7 +29,7 @@
   --menu-link-hover-color: #abc6dc;
   --names-background-color: #29709a;
   --navbar-color: #f06161;
-  --text-background-color: #f6f6f6;
+  --text-background-color: #f2ebe9;
 }
 
 body {
@@ -110,6 +111,8 @@ nav {
   background-size: cover;
   height: 200px;
   background-position: center 30%;
+  border: solid #c33c3a;
+  border-width: 2px 0 0 0;
 }
 
 .candidate-names {
