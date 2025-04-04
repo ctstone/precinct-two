@@ -10,7 +10,7 @@ import { ContentService } from './content.service';
   template: `
       <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
         <div class="text-white candidates-overlay">
-          <h1 class="display-3 fw-bold">Vote NEW, Precinct 2!</h1>
+          <h1 class="display-3 fw-bold">Vote NEW, Precinct 2</h1>
           <h3 class="fw-normal text-white mb-3">Brookline Town Meeting</h3>
           <h3 class="fw-normal text-white mb-3">2025</h3>
         </div>
