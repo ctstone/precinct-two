@@ -28,7 +28,7 @@ import { Router, RouterModule } from '@angular/router';
               </li>
               @for (link of links; track link.path) {
                 <li class="nav-item">
-                  <a class="nav-link" [routerLink]="link.path" routerLinkActive="active">
+                  <a class="nav-link"> <!-- [routerLink]="link.path" routerLinkActive="active" -->
                     <i [class]="link.icon"></i>
                     {{link.name}}
                   </a>
