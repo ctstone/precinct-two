@@ -24,7 +24,7 @@ import { ContentService } from './content.service';
       </div>
 
     <div class="container">
-      @for (card of cards; track card.link; let i = $index) {
+      @for (card of cards; track card.title; let i = $index) {
         <p2-card [cardTitle]="card.title" [link]="card.link" [image]="card.image" [stagger]="i % 2 === 1" [imageWidth]="card.imageWidth ?? 6">
           @for (paragraph of card.text$ | async; track paragraph) {
             <p class="card-text" [innerHTML]="paragraph"></p>
