@@ -52,10 +52,10 @@ export class NavbarComponent {
   readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
   readonly menuVisible = signal(false);
   readonly links = [
-    // { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', path: 'candidates' },
+    { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', path: 'candidates' },
     { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', path: 'challenges-ahead' },
-    // { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', path: 'endorsements' },
-    // { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', path: 'voting' },
+    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', path: 'endorsements' },
+    { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', path: 'voting' },
   ];
 
   constructor() {
