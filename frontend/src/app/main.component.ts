@@ -47,7 +47,7 @@ export class MainComponent {
 
   readonly cards = [
     {
-      title: 'Meet the Candidates',
+      title: 'Who we are',
       // link: 'candidates',
       image: 'img/main/IMG_6742.jpeg',
       text$: this.content.fetch('main/meet-the-candidates.txt'),

@@ -11,5 +11,5 @@ export class ContentService {
 
   readonly fetch = (path: string) => this.http
     .get(path, { responseType: 'text' })
-    .pipe(map((text) => text.split('\n').filter((line) => !!line)));
+    .pipe(map((text) => text.split('\n\n').filter((line) => !!line)));
 }
