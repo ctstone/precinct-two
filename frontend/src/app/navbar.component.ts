@@ -26,7 +26,7 @@ import { Router, RouterModule } from '@angular/router';
                   <span class="only-on-mobile">Home</span>
                 </a>
               </li>
-              @for (link of links; track link.path) {
+              @for (link of links; track link.id) {
                 <li class="nav-item">
                   <a class="nav-link" [routerLink]="link.path" routerLinkActive="active">
                     <i [class]="link.icon"></i>
@@ -52,10 +52,10 @@ export class NavbarComponent {
   readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
   readonly menuVisible = signal(false);
   readonly links = [
-    { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', /*path: 'candidates'*/ },
-    { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', path: 'challenges-ahead' },
-    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', /*path: 'endorsements'*/ },
-    { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', /*path: 'voting'*/ },
+    { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', id: 'candidates', /*path: 'candidates'*/ },
+    { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', id: 'challenges-ahead', path: 'challenges-ahead' },
+    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', id: 'endorsements', /*path: 'endorsements'*/ },
+    { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', id: 'voting', /*path: 'voting'*/ },
   ];
 
   constructor() {
