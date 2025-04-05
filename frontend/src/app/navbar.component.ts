@@ -28,7 +28,7 @@ import { Router, RouterModule } from '@angular/router';
               </li>
               @for (link of links; track link.path) {
                 <li class="nav-item">
-                  <a class="nav-link"> <!-- [routerLink]="link.path" routerLinkActive="active" -->
+                  <a class="nav-link" [routerLink]="link.path" routerLinkActive="active">
                     <i [class]="link.icon"></i>
                     {{link.name}}
                   </a>
@@ -52,10 +52,10 @@ export class NavbarComponent {
   readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
   readonly menuVisible = signal(false);
   readonly links = [
-    { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', path: 'candidates' },
+    { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', /*path: 'candidates'*/ },
     { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', path: 'challenges-ahead' },
-    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', path: 'endorsements' },
-    { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', path: 'voting' },
+    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', /*path: 'endorsements'*/ },
+    { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', /*path: 'voting'*/ },
   ];
 
   constructor() {
