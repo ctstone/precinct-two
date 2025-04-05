@@ -129,7 +129,7 @@ nav {
   display: none;
   background-color: var(--names-background-color);
   border: solid #364871;
-  border-width: 2px 0 2px 0;
+  border-width: 1px 0 1px 0;
 }
 .candidate-names a {
   color: #ebe3da;
@@ -157,6 +157,12 @@ nav {
 
 .img-fluid {
   filter: drop-shadow(8px 8px 10px gray);
+}
+
+.p2-list {
+  li::marker {
+    color: var(--h4-color);
+  }
 }
 
 @media (min-width: 768px) {

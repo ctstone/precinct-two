@@ -1,10 +1,10 @@
-Meet Esther, Lauren, Colleen, Elise, and Meghan! As your <b>NEW Precinct 2 slate</b>, we believe that responsible government means creating a community where every resident feels heard, valued, and supported. We want a Brookline where our families, our children, and our grandchildren can grow and thrive.
+Meet <b>Esther</b>, <b>Lauren</b>, <b>Colleen</b>, <b>Elise</b>, and <b>Megan</b>! As your <b>Precinct 2 slate</b>, we believe that responsible government means creating a community where every resident feels heard, valued, and supported. We want a Brookline where our families, our children, and our grandchildren can grow and thrive.
 
 For us, it’s about making thoughtful, well-informed decisions that prioritize the well-being of all Brookline residents—regardless of income, background, or identity.
 
 To achieve this vision, we will:
 
-<ul>
+<ul class="p2-list">
     <li>Support policies that ensure our schools receive the funding necessary to maintain the level of excellence we have come to expect from our neighborhood schools</li>
     <li>Prioritize mixed-use and commercial development near transit on underutilized sites to boost Town revenue and increase our diversity</li>
     <li>Advocate for a comprehensive review of the Town budget to maximize efficiency and make strategic investments</li>
