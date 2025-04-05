@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { ContentService } from './content.service';
 
 @Component({
-  selector: 'p2-main',
+  selector: 'p2-landing',
   imports: [CardComponent, RouterModule, CommonModule],
   template: `
       <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
@@ -34,7 +34,7 @@ import { ContentService } from './content.service';
     </div>
   `
 })
-export class MainComponent {
+export class LandingComponent {
   readonly content = inject(ContentService);
 
   readonly candidates = [

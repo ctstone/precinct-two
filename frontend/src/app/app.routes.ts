@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MainComponent } from './main.component';
+import { LandingComponent } from './landing.component';
 import { CandidatesComponent } from './candidates.component';
 import { IssuesComponent } from './issues.component';
 import { EndorsementsComponent } from './endorsements.component';
@@ -16,7 +16,7 @@ import { ThemeComponent } from './theme.component';
 import { IssueComponent } from './issue.component';
 
 export const routes: Routes = [
-    { path: '', pathMatch: 'full', component: MainComponent },
+    { path: '', pathMatch: 'full', component: LandingComponent },
     { path: 'candidates', component: CandidatesComponent },
     {
         path: 'challenges-ahead',
