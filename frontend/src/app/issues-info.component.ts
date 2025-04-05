@@ -1,5 +1,5 @@
 import { CommonModule, TitleCasePipe } from '@angular/common';
-import { Component, computed, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ContentService } from './content.service';
 import { map, switchMap } from 'rxjs';
@@ -8,7 +8,7 @@ import { map, switchMap } from 'rxjs';
   selector: 'p2-issues-info',
   imports: [CommonModule, TitleCasePipe],
   template: `
-    <div class="card my-3 p-2">
+    <div class="card my-3 p-2 issue">
       <div class="card-body">
         <h4 class="card-title" style="font-weight: bold;">{{(title$ | async) | titlecase }}</h4>
         @for (paragraph of text$ | async; track paragraph) {
@@ -16,8 +16,7 @@ import { map, switchMap } from 'rxjs';
         }
       </div>
     </div>
-  `,
-  styles: ``
+  `
 })
 export class IssuesInfoComponent {
   private readonly route = inject(ActivatedRoute);
