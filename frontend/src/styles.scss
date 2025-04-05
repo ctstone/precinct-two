@@ -160,9 +160,14 @@ nav {
 }
 
 .p2-list {
+  margin-top: 0;
   li::marker {
     color: var(--h4-color);
   }
+}
+
+.p2-1 {
+  font-size:1.2em;;
 }
 
 @media (min-width: 768px) {
