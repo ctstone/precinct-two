@@ -201,6 +201,16 @@ nav {
     margin-bottom: 1em;
     width: 250px;
   }
+
+  .img-4 {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 300px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 768px) {
