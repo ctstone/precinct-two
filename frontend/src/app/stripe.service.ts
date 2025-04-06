@@ -17,7 +17,7 @@ interface CreateSessionResponse {
 export class StripeService {
   private readonly http = inject(HttpClient);
 
-  private readonly key$ = this.http.get<StripeKeyResponse>('/api/stripe/publishable-key')
+  private readonly key$ = this.http.get<StripeKeyResponse>('/api/stripe/client-key')
     .pipe(map((response) => response.key));
 
   private readonly stripe$ = this.key$.pipe(
@@ -30,13 +30,10 @@ export class StripeService {
     return stripe;
   });
 
-  async createSession(amount: number): Promise<string> {
-    const origin = window.location.origin;
-    const response = await lastValueFrom(this.http.post<CreateSessionResponse>('/api/stripe/session', {
+  async createIntent(amount: number): Promise<string> {
+    const response = await lastValueFrom(this.http.post<CreateSessionResponse>('/api/stripe/create-intent', {
       amount,
-      origin,
     }));
-
     return response.clientSecret;
   }
 }

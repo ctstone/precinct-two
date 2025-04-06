@@ -1,10 +1,11 @@
 import { Component, computed, inject, signal } from '@angular/core';
-import { StripeService } from './stripe.service';
 import { StripeElements } from '@stripe/stripe-js';
+import { StripeService } from './stripe.service';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'p2-donate',
-  imports: [],
+  imports: [FormsModule, ReactiveFormsModule],
   template: `
     <div class="container">
       <div class="row my-3">
@@ -23,30 +24,46 @@ import { StripeElements } from '@stripe/stripe-js';
               <b>Your support can make a real difference!</b> By donating today, you’re helping us work toward a future where everyone in Brookline has the resources and opportunities to thrive. Every contribution–no matter how small–helps us get closer to this goal.
             </p>
             <p class="card-text">
-              Join us in creating a brighter future for Brookline. <i>Together, we will work to build an active, dynamic, and sustainable Brookline, where thriving businesses and homes for all incomes are seamlessly integrated with the natural environment!</i>
+              <b>Join us in creating a brighter future for Brookline. Together, we will work to build an active, dynamic, and sustainable Brookline, where thriving businesses and homes for all incomes are seamlessly integrated with the natural environment!</b>
             </p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="donation-amount-list justify-content-between">
             @for (amount of amounts; track amount) {
-              <button class="rounded-2 donation-amount flex-grow-1" [disabled]="!paymentReady() || successMessage()" [class.active]="selectedAmount() == amount" (click)="updateAmount(amount)">\${{amount / 100}}</button>
+              <button class="rounded-2 donation-amount flex-grow-1" [class.active]="selectedAmount() == amount" (click)="updateAmount(amount)">\${{amount / 100}}</button>
             }
           </div>
+          @if (!paymentReady()) {
+            <p class="bg-body p-2 mt-1 rounded small text-muted">
+              Choose an amount to donate to the Brookline Precinct 2 Slate.
+            </p>
+          }
           @if (errorMessage(); as errorMessage) {
             <p class="alert alert-danger" role="alert">{{errorMessage}}</p>
           }
 
-          <!-- @if (successMessage(); as successMessage) {
-            <p class="alert alert-success" role="alert">{{successMessage}}</p>
-          }
-          @else {
+          <form (ngSubmit)="donate()" [formGroup]="form">
             <div id="payment"></div>
-            <div>
-              <button class="btn btn-primary mt-3" [disabled]="!paymentReady()" (click)="donate()">Donate</button>
-            </div>
-          } -->
-
+            @if (paymentReady()) {
+              <div class="bg-body p-3 rounded mt-2">
+                <div class="form-floating">
+                  <input type="text" class="form-control form-control-sm" id="name" formControlName="name" placeholder="Optional">
+                  <label for="name" class="form-label text-muted small">Name (optional)</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input type="email" class="form-control form-control-sm" id="email" formControlName="email" placeholder="Optional">
+                  <label for="email" class="form-label text-muted small">Email (optional)</label>
+                </div>
+                <p class="small text-muted mt-1">
+                  Per Massachusetts Office of Campaign and Political Finance, members of a representative town meeting are <a href="https://www.ocpf.us/PublicSearch/ViewDocument?id=3773" style="color:#5c84ae">exempted from the reporting and disclosure provisions of the campaign finance law</a>.
+                </p>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary mt-2" [disabled]="loading()">Donate</button>
+              </div>
+            }
+          </form>
         </div>
       </div>
     </div>
@@ -54,7 +71,6 @@ import { StripeElements } from '@stripe/stripe-js';
   styles: `
     .donation-amount-list {
       display: flex;
-      margin-bottom: 1rem;
     }
     .donation-amount {
       background-color: #f8f9fa;
@@ -77,7 +93,7 @@ import { StripeElements } from '@stripe/stripe-js';
       }
 
       &:hover {
-        background-color: #e2e6ea;
+        background-color:rgb(164, 215, 177);
         border-color: #adb5bd;
       }
 
@@ -89,65 +105,63 @@ import { StripeElements } from '@stripe/stripe-js';
   `
 })
 export class DonateComponent {
-  readonly stripe = inject(StripeService);
+  private readonly _stripe = inject(StripeService);
+  private readonly formBuilder = inject(FormBuilder);
+  private readonly _amount = signal<number | null>(null);
+  private readonly _elements = signal<StripeElements | null>(null);
 
   readonly amounts = [100, 500, 1000, 2000];
-
-  private readonly _amount = signal<number | null>(null);
-
   readonly selectedAmount = computed(() => this._amount());
-
-  readonly paymentReady = computed(() => !!this.elements());
-
-  private readonly elements = signal<StripeElements | null>(null);
-
+  readonly paymentReady = computed(() => !!this._elements());
   readonly errorMessage = signal<string | null>(null);
+  readonly loading = signal(false);
+  readonly form = this.formBuilder.group({
+    name: [''],
+    email: [''],
+  });
 
-  readonly successMessage = signal<string | null>(null);
-
-  constructor() {
-    this.stripe.value
-      .then((stripe) => {
-        // stripe.initCheckout({
-        // });
-        const elements = stripe.elements({
-          mode: 'payment',
-          currency: 'usd',
-          amount: 100,
-          paymentMethodTypes: [ 'card' ],
-        });
-        elements.create('')
-        // const payment = elements.create('payment');
-        // payment.mount('#payment');
-        // this.elements.set(elements);
-        // const card = elements.getElement('card');
-        // payment.on('ready', (x) => {
-        // });
-      })
-      .catch(console.error);
+  async updateAmount(amount: number) {
+    const stripe = await this._stripe.value;
+    const clientKey = await this._stripe.createIntent(amount);
+    let elements = this._elements();
+    if (elements) {
+      elements.update({ customerSessionClientSecret: clientKey });
+    } else {
+      elements = stripe.elements({
+        clientSecret: clientKey,
+      });
+      elements.create('payment').mount('#payment');
+      this._elements.set(elements);
+    }
+    this._amount.set(amount);
   }
 
-  updateAmount(amount: number) {
-    // const elements = this.elements();
-    // if (elements) {
-    //   this._amount.set(amount);
-    //   elements.update( { amount } );
-    // }
-
-    this.stripe.createSession
-  }
-
-  donate() {
-    // const elements = this.elements();
-    // this.errorMessage.set(null);
-    // if (elements) {
-    //   elements.submit().then((result) => {
-    //     if (result.error) {
-    //       this.errorMessage.set(result.error.message ?? 'unknown error');
-    //     } else {
-    //       this.successMessage.set('Thank you for your donation!');
-    //     }
-    //   });
-    // }
+  async donate() {
+    const stripe = await this._stripe.value;
+    const elements = this._elements();
+    this.errorMessage.set(null);
+    if (elements) {
+      this.loading.set(true);
+      const { error } = await stripe.confirmPayment({
+        elements,
+        confirmParams: {
+          return_url: `${window.location.origin}/donate/thanks`,
+          payment_method_data: {
+            billing_details: {
+              name: this.form.value.name || undefined,
+              email: this.form.value.email || undefined,
+            }
+          }
+        },
+      });
+      this.loading.set(false);
+      if (error.message && (error.type === "card_error" || error.type === "validation_error")) {
+        this.errorMessage.set(error.message);
+      } else {
+        this.errorMessage.set("An unexpected error occurred.");
+      }
+    }
   }
 }
+
+// https://www.ocpf.us/PublicSearch/ViewDocument?id=3773
