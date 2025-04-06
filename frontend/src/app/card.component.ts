@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
             <img [src]="image()" class="img-fluid rounded">
           }
           @if (imageCredit(); as imageCredit) {
-            <p class="small text-muted">{{imageCredit}}</p>
+            <p class="small text-muted m-0">{{imageCredit}}</p>
           }
         </div>
         <div class="col-md-{{textWidth()}} card-container">
