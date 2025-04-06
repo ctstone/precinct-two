@@ -172,8 +172,28 @@ nav {
   display:block;
 }
 
-.issue a {
-  color: #5c84ae;
+.issue {
+  a {
+    color: #5c84ae;
+  }
+
+  img {
+    width:200px;
+    filter: drop-shadow(8px 8px 10px gray);
+  }
+
+  .img-1 {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .img-2 {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    width: 300px;
+  }
 }
 
 @media (min-width: 768px) {

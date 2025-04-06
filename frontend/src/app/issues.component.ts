@@ -11,7 +11,7 @@ export const ISSUES = [
   },
   {
     name: 'Fiscal Responsibility',
-    image: 'IMG_7055.jpeg',
+    image: 'IMG_8311.jpeg',
     link: 'fiscal-responsibility',
   },
   {
@@ -20,9 +20,9 @@ export const ISSUES = [
     link: 'education',
   },
   {
-    name: 'Environment, Sustainability, & Infrastructure',
+    name: 'Environmental Stewardship',
     image: 'istockphoto-1311429427-1024x1024.jpg',
-    link: 'infrastructure',
+    link: 'environmental-stewardship',
   },
   {
     name: 'Economic Development',
