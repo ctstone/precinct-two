@@ -11,7 +11,9 @@ import { ContentService } from './content.service';
       <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-body-tertiary candidates">
         <div class="text-white candidates-overlay">
           <h1 class="display-3 fw-bold">Precinct 2 Slate, 2025</h1>
-          <h3 class="fw-normal text-white mb-3">Brookline Town Meeting</h3>
+          <h3 class="fw-normal text-white mb-3">
+            <a href="https://www.brooklinema.gov/264/Town-Meeting" style="color:white; text-decoration:none">Brookline Town Meeting</a>
+          </h3>
         </div>
 
         <div class="justify-content-around candidate-names">

@@ -14,4 +14,6 @@ We want to contribute to  a Brookline where our children are able to raise their
 <b>Brookline’s financial future depends on the choices we make today.</b>
 Help us get Brookline back on track with affordable housing, education, fiscal responsibility – and so much more!
 
-<b class="p2-1">Vote NEW for Precinct 2–Tuesday, May 6th!</b>
+<b class="p2-1">
+    <a href="voting">Vote NEW for Precinct 2–Tuesday, May 6th!</a>
+</b>

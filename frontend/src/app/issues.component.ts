@@ -11,7 +11,8 @@ export const ISSUES = [
   },
   {
     name: 'Fiscal Responsibility',
-    image: 'IMG_8311.jpeg',
+    image: 'town-hall.jpeg',
+    imageCredit: 'Photo credit: Aiden Rhaa',
     link: 'fiscal-responsibility',
   },
   {
@@ -38,7 +39,7 @@ export const ISSUES = [
       <h1 class="my-4">Challenges Ahead</h1>
 
       @for (card of cards; track card.name; let i = $index) {
-        <p2-card [cardTitle]="card.name" [link]="card.link" image="img/issues/{{card.image}}" [imageWidth]="3" [stagger]="i % 2 === 1">
+        <p2-card [cardTitle]="card.name" [link]="card.link" image="img/issues/{{card.image}}" [imageWidth]="3" [imageCredit]="card.imageCredit" [stagger]="i % 2 === 1">
           @for (paragraph of card.text$ | async; track paragraph) {
             <p class="card-text" [innerHTML]="paragraph"></p>
           }

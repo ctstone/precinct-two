@@ -15,6 +15,9 @@ import { RouterModule } from '@angular/router';
           } @else {
             <img [src]="image()" class="img-fluid rounded">
           }
+          @if (imageCredit(); as imageCredit) {
+            <p class="small text-muted">{{imageCredit}}</p>
+          }
         </div>
         <div class="col-md-{{textWidth()}} card-container">
           <div class="card-body text-muted">
@@ -50,6 +53,7 @@ export class CardComponent {
   readonly cardId = input<string>();
   readonly image = input.required<string>();
   readonly imageWidth = input(6);
+  readonly imageCredit = input<string>();
   readonly stagger = input(false);
   readonly textWidth= computed(() => 12 - this.imageWidth());
 }
