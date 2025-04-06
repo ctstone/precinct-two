@@ -57,10 +57,18 @@ function createCheckoutSession() {
   };
 }
 
+function createPaymentIntent() {
+  return async (req, res) => {
+    const resp = await stripe.paymentIntents.create({
+
+    });
+  };
+}
+
 const app = express();
 app
   .get('/api/stripe/publishable-key', getStripePublishableKey(process.env.Stripe_Publishable_Key))
-  .post('/api/stripe/session', bodyParser.json(), createCheckoutSession())
+  .post('/api/stripe/create-intent', bodyParser.json(), createCheckoutSession())
   .use(
     express.static(staticDir, { fallthrough: true }),
     defaultContent(join(staticDir, 'index.html'), 'text/html'))
