@@ -31,6 +31,11 @@ import { RouterModule } from '@angular/router';
               }
             </h4>
             <ng-content />
+            @if (link(); as link) {
+              <div class="card-text">
+                <a [routerLink]="link" class="btn btn-primary" style="background-color: inherit; border-color: var(--background-color)">Learn More</a>
+              </div>
+            }
           </div>
         </div>
       </div>
