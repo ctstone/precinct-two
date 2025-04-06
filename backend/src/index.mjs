@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 const PORT = process.env.PORT || 3000;
 const __dirname = import.meta.dirname;
 const staticDir = join(__dirname, '..', 'static', 'browser');
-const stripe = new Stripe(process.env.Stripe_Secret_Key, {
+const stripe = new Stripe(process.env.CUSTOMCONNSTR_Stripe_Secret_Key, {
   apiVersion: '2025-03-31.basil',
 });
 
@@ -47,7 +47,7 @@ function createPaymentIntent() {
 
 const app = express();
 app
-  .get('/api/stripe/client-key', getStripePublishableKey(process.env.Stripe_Publishable_Key))
+  .get('/api/stripe/client-key', getStripePublishableKey(process.env.CUSTOMCONNSTR_Stripe_Publishable_Key))
   .post('/api/stripe/create-intent', bodyParser.json(), createPaymentIntent())
   .use(
     express.static(staticDir, { fallthrough: true }),
