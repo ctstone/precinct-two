@@ -1,4 +1,4 @@
-<img src="/img/issues/education-1.jpeg" class="img-4">
+<img src="/img/issues/education-1.jpeg" class="img-4 mt-3">
 
 The <a href="https://stories.opengov.com/brooklinema/bca92894-b103-49d7-9ffe-4cff983d5265/published/pWgvVpKym?currentPageId=65fb0aaf3b9829ac866c5c0f">Town/School Partnership</a>, which has been in place since 1995, plays a key role in Brookline’s annual financial planning process. The agreement ensures that the Town and Schools each receive 50% of the available revenue, after fixed costs are deducted, to fund their operations. Over time, adjustments have been made to accommodate rising enrollment, with more funding directed to the School side of the formula. Recent changes include allocating revenues from increases in the trash fee to the Town side, as these fees help cover the cost of new trash collection services.
 

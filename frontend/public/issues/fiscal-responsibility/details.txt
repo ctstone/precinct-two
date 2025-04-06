@@ -1,4 +1,4 @@
-<div class="img-4">
+<div class="img-4 mt-3">
     <img src="/img/issues/town-hall.jpeg">
     <br>Photo credit: Aiden Rhaa
 </div>
