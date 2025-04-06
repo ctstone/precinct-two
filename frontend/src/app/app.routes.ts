@@ -9,6 +9,7 @@ import { PrivacyComponent } from './privacy.component';
 import { ThemeComponent } from './theme.component';
 import { IssueComponent } from './issue.component';
 import { IssuesInfoComponent } from './issues-info.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', component: LandingComponent },
@@ -37,7 +38,19 @@ export const routes: Routes = [
     },
     // { path: 'endorsements', component: EndorsementsComponent },
     // { path: 'voting', component: VotingComponent },
-    // { path: 'donate', component: DonateComponent },
+    {
+        path: 'donate', children: [
+            {
+                path: '',
+                pathMatch: 'full',
+                component: DonateComponent,
+            },
+            {
+                path: 'thanks',
+                component: ThanksComponent,
+            }
+        ]
+    },
     // { path: 'privacy', component: PrivacyComponent },
     { path: 'theme', component: ThemeComponent },
 ];
