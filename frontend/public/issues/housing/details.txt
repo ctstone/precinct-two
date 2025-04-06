@@ -2,8 +2,10 @@ We, alongside our endorsement partners, advocate for <a href="https://www.brookl
 This would ensure equal access to essential resources, reduce reliance on cars, and lower associated costs.
 Not only would this approach support the affordability of living in Brookline, but it would also help mitigate climate change by reducing emissions.
 
+
 <ol type="a">
     <li>
+        <img src="/img/issues/housing-1.jpeg" class="img-2">
         <b>Housing and Racial Justice:</b>
         <p>
             Housing and racial justice are deeply interconnected.
@@ -21,6 +23,7 @@ Not only would this approach support the affordability of living in Brookline, b
         </p>
     </li>
     <li>
+        <img src="/img/issues/housing-3.jpeg" class="img-2">
         <b>Comprehensive Plan Study:</b>
         <p>
             The <a href="https://www.brooklinema.gov/2483/Arc-Planning-Process-Study-Committee">Comprehensive Plan Study Committee</a> and <a href="https://www.brooklinema.gov/3886/Town-Meeting-Resources#submitting-articles">citizen-petitioned warrant articles</a> serve different but complementary roles in shaping Brookline’s zoning policies and land use.
@@ -32,6 +35,7 @@ Not only would this approach support the affordability of living in Brookline, b
         </p>
     </li>
     <li>
+        <img src="/img/issues/housing-2.jpeg" class="img-2">
         <b>Problem-Resolution:</b>
         <p>
             We believe Brookline can strike a meaningful balance between providing much-needed affordable housing and maintaining the unique visual vernacular of Brookline's built environment.
