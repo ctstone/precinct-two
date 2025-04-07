@@ -1,9 +1,9 @@
-Meet <b>Esther</b>, <b>Lauren</b>, <b>Colleen</b>, <b>Elise</b>, and <b>Megan</b>! As your <b>Precinct 2 Slate</b>, we recognize that responsible government means creating a community where every resident feels heard, valued, and supported.
-We are running for the first time because we believe Brookline needs thoughtful, inclusive leadership who prioritize the well-being of all Brookline residents–regardless of income, background, or identity.
+Meet <b>Esther</b>, <b>Lauren</b>, <b>Colleen</b>, <b>Elise</b>, and <b>Megan</b>!
+As your <b>Precinct 2 Slate</b>, we recognize that responsible government means creating a community where every resident feels heard, valued, and supported.
+We’re running for the first time because we believe Brookline needs thoughtful, inclusive leadership who prioritizes the well-being of all Brookline residents–regardless of income, background, or identity.
 We want to contribute to a Brookline where our children can raise their families near us, our seniors can age in place, and we welcome new neighbors.
 
 <b>To achieve this, we will:</b>
-
 <ul class="p2-list">
     <li>Support policies that ensure our schools receive the funding necessary to maintain the level of excellence we have come to expect from our neighborhood schools
     <li>Promote more homes and commercial development near transit hubs to increase our tax base, and relieve the tax burden for our residents
@@ -12,6 +12,8 @@ We want to contribute to a Brookline where our children can raise their families
 </ul>
 
 <b>Brookline’s financial future depends on the choices we make today.</b>
-Help us build a path to increasing housing affordability, raising revenue for our schools, and promoting fiscal responsibility, while also preserving the things we love most about Brookline.
+Help us build a path to increasing housing affordability, raising revenue for our schools, and promoting fiscal responsibility, while also preserving the things we love most about our beloved community.
 
-<b class="d-block text-center">Vote for the Precinct 2 Slate, by Voting for ALL FIVE Candidates<br>Tuesday, May 6th!</b>
+<b class="d-block text-center">
+    Vote for the Precinct 2 Slate, by Voting for <i>ALL FIVE</i> Candidates,<br>Tuesday, May 6th!
+</b>

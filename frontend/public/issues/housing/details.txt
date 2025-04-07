@@ -1,45 +1,77 @@
-<ol type="a">
-    <li>
-        <img src="/img/issues/housing-3.jpeg" class="img-2">
-        <b>Comprehensive Plan Study:</b>
-        <p>
-            The <a href="https://www.brooklinema.gov/2483/Arc-Planning-Process-Study-Committee">Comprehensive Plan Study Committee</a> and <a href="https://www.brooklinema.gov/3886/Town-Meeting-Resources#submitting-articles">citizen-petitioned warrant articles</a> serve different but complementary roles in shaping Brookline’s zoning policies and land use.
-            The Comprehensive Plan Study Committee, as a slower-moving body, provides long-term, strategic guidance that reflects careful consideration of community goals and town values.
-            Their focus is on ensuring that changes align with the broader vision for Brookline’s future, balancing competing interests in a sustainable way.
-            However, our citizen-petitioned warrant articles provide more immediate, grassroots action, and are clear indicators of the ‘real-time’ shifting values and priorities of our residents and neighbors.
-            They allow the community to voice urgent needs and concerns, particularly around housing affordability and density, which sometimes demand quicker responses than the longer-term deliberations of a committee that can sometimes slow or stymie the development process.
-            It’s essential to take a collaborative approach, ensuring that the insights from community-driven warrant articles inform and, at times, even accelerate the work of the Comprehensive Plan Committee.
-        </p>
-    </li>
-    <li>
-        <img src="/img/issues/housing-1.jpeg" class="img-2">
-        <b>Housing and Racial Justice:</b>
-        <p>
-            Housing and racial justice are deeply interconnected.
-            <a href="https://www.brooklinema.gov/3634/38706/Zoning-History">Historical practices such as redlining and discriminatory zoning have disproportionately impacted communities of color, limiting access to affordable housing in different communities</a>.
-            To avoid perpetuating these disparities in our own community, we must ensure our housing policies actively foster inclusive, mixed-income neighborhoods where people from diverse social, cultural, racial, and economic backgrounds can live and thrive together.
-        </p>
-        <p>
-            To do this, we believe that any new housing initiatives we consider must center equity by seamlessly integrating affordable housing into our existing neighborhoods.
-            We can do this in three key ways:
-            <ol>
-                <li>By encouraging density near transit hubs and essential services, we can prevent further displacement and segregation along racial and economic lines.
-                <li>By ensuring marginalized groups are equally represented in the decision-making process at the highest level of our town government and particularly, with regard to housing development.
-                <li>By creating necessary support infrastructures—such as equitable access to education and other crucial resources—so that new residents can seamlessly integrate into the community.
-            </ol>
-        </p>
-    </li>
-    <li>
-        <img src="/img/issues/housing-2.jpeg" class="img-2">
-        <b>Problem-Resolution:</b>
-        <p>
-            We believe Brookline can strike a meaningful balance between providing much-needed affordable housing and maintaining the unique visual vernacular of Brookline's built environment.
-            We can do this by considering density that complements the character of our neighborhoods, rather than overwhelming or fundamentally changing them.
-            Zoning changes should incorporate strategies for adaptive reuse of historic buildings, preserving our cultural and architectural heritage while still allowing for growth and development.
-            <a href="https://www.brooklinema.gov/1299/Housing-Production-Plan">Mixed-use development</a> and infill projects can also help increase density without disrupting the character of our neighborhoods, and we plan to support policies that will help Brookline do just that!
-        </p>
-        <p>
-            You can check out more details on the <a href="https://www.brooklinema.gov/1299/Housing-Production-Plan">Town’s website</a>.
-        </p>
-    </li>
-</ol>
+<b class="lead"><strong>Comprehensive Plan Study</strong>:</b>
+<a href="https://www.brooklinema.gov/2483/Arc-Planning-Process-Study-Committee">The Comprehensive Plan Study Committee</a> and <a href="https://www.brooklinema.gov/3886/Town-Meeting-Resources#submitting-articles">citizen-petitioned warrant articles</a> serve different but complementary roles in shaping Brookline’s zoning policies and land use. The Comprehensive Plan Study Committee, is a slower-moving body and provides long-term, strategic guidance that reflects careful consideration of community goals and town values.
+Their focus is on ensuring that changes align with the broader vision for Brookline’s future, balancing competing interests in a sustainable way.
+
+However, Brookline’s citizen-petitioned warrant articles provide more immediate, grassroots action, and are clear indicators of the ‘real-time’ shifting values and priorities of our residents and neighbors.
+They allow the community to voice urgent needs and concerns, particularly around housing affordability and density, which sometimes demand quicker responses than the longer-term deliberations of a committee that can sometimes slow or stymie the development process.
+It is essential to take a collaborative approach, ensuring that the insights from community-driven warrant articles inform and, at times, even accelerate the work of the Comprehensive Plan Committee.
+
+<b class="lead"><strong>Comprehensive Planning</strong>:</b>
+This spring, Brookline will kick off the development of the new <a href="https://www.brooklinema.gov/DocumentCenter/View/44456/Comprehensive-Plan-RFP-Draft-approved-by-Planning-Process-Study-Committee-on-8-22-23">Comprehensive Plan</a>.
+The plan will be led by the Comprehensive Plan Steering Group, chaired by Select Board Member, <a href="https://www.paulwarren.org/meet-paul">Paul Warren</a>, and supported by consultants from the architectural firm, <a href="https://agencylp.com/">Agency Landscape and Planning</a>.
+The planning process started in 2023 with the formation of the <a href="https://www.brooklinema.gov/2483/Arc-Planning-Process-Study-Committee">Planning Process Study Committee</a>, which has been working hard to create an inclusive, community-driven framework for future progress.
+The goal is to make this process collaborative, with clear goals for the near, medium, and long term.
+As your representatives for Precinct 2 Town Meeting Members, we’re focused on listening to everyone in the community and using that input to shape Brookline’s future together.
+This will ensure that the plan reflects our shared vision and values for our beloved and historic town.
+
+<b class="lead"><strong>Housing Production Plan (HPP)</strong>:</b>
+Brookline’s <a href="https://www.brooklinema.gov/DocumentCenter/View/53784/BHHP2024-11-12---approved-by-state">updated Housing Production Plan</a> is all about meeting the housing needs of our community.
+Our community partners have built on the first plan from 2016, and while some of its recommendations were put into action, many are still pending, and the need for more housing has only grown.
+That’s why we support the tenants of <a href="https://www.brooklinema.gov/DocumentCenter/View/24107/2021-03-19-Admin-and-Finance-Subcommittee-Report-on-WA34">Warrant Article 34</a>, which called for an <a href="https://www.brooklinema.gov/DocumentCenter/View/53784/BHHP2024-11-12---approved-by-state">updated plan</a>.
+After a lot of community input and hard work, the updated plan was presented to the Housing Advisory Board in November 2022, and it was officially approved by the Select Board in February 2024.
+The plan includes recommendations for increasing housing at all income levels, with specific sites in Brookline identified for zoning changes that will help make it happen.
+
+You can check out more details on the <a href="https://www.brooklinema.gov/1299/Housing-Production-Planhttps://www.brooklinema.gov/1299/Housing-Production-Plan">Town’s website</a>.
+
+<b class="lead"><strong>MBTA Communities Act (MBTACA)</strong>:</b>
+On November 14, 2023, 84% of Town Meeting Members voted to pass Brookline’s <a href="https://www.brooklinema.gov/DocumentCenter/View/44958/EXPLANATIONS-FOR-WA-3---4--5-MBTACA">Consensus MBTA-CA Warrant Article</a>.
+<blockquote class="ms-5">
+    <dl>
+        <dt>What’s this warrant article all about?</dt>
+        <dd>
+            This article is about Brookline making smart, thoughtful changes to help us meet important state requirements and create more housing for people at all income levels.
+            It’s part of the state’s MBTA Communities Act, which asks towns served by the MBTA to allow for multi-family housing near transit hubs.
+            This article will help Brookline comply with that law and bring more affordable housing to our community, while keeping our town’s character intact.
+        </dd>
+        <dt>Here’s what the article proposes:</dt>
+        <dd>
+            <ul>
+                <li>New Zoning Changes: It will create a new zoning district that allows multi-family housing in existing areas designated for that purpose.
+                <li>Emerald Island District: It will make it easier to add more multi-family units in the Emerald Island district to boost housing options.
+                <li>Walnut and High Streets: It proposes new, affordable housing at the Brookline Housing Authority’s property on Walnut and High Streets.
+                <li>Harvard Street: It will create new zoning for multi-family homes along Harvard Street, supporting our growing commercial corridor.
+            </ul>
+        </dd>
+        <dt>Affordable Housing By-Law Update</dt>
+        <dd>
+            It also adjusts our rules to better support affordable housing and make sure it’s part of the community’s growth.
+            The goal here is to find a balance that will allow us to grow and build more affordable homes while respecting the charm of Brookline.
+            It’s about listening to everyone in the community and working together to create something we can all be proud of.
+            Through careful planning, this article aims to provide more homes for people of all income levels and make sure that new developments support a thriving, sustainable, and inclusive Brookline.
+            For more details, be sure to check out the full information available on the <a href="https://www.brooklinema.gov/DocumentCenter/View/43435/v2_BRK_FBC_PublicReviewDraft_ToStaff_2023-0728">Town’s website</a>.
+        </dd>
+    </dl>
+</blockquote>
+
+<b class="lead"><strong>Housing and Racial Justice</strong>:</b>
+Housing and racial justice are deeply interconnected.
+<a href="https://www.brooklinema.gov/3634/38706/Zoning-History">Historical practices such as redlining and discriminatory zoning have disproportionately impacted communities of color, limiting access to affordable housing in different communities</a>.
+To avoid perpetuating these disparities in our own community, we must ensure our housing policies actively foster inclusive, mixed-income neighborhoods where people from diverse social, cultural, racial, and economic backgrounds can live and thrive together.
+To do this, we believe that any new housing initiatives we consider must center equity by seamlessly integrating affordable housing into our existing neighborhoods.
+
+<blockquote class="ms-5">
+    <b>We can do this in three key ways:</b>
+    <ol>
+        <li>By encouraging density near transit hubs and essential services, we can prevent further displacement and segregation along racial and economic lines.
+        <li>By ensuring marginalized groups are equally represented in the decision-making process at the highest level of our town government and particularly, with regard to housing development.
+        <li>By creating necessary support infrastructures—such as equitable access to education and other crucial resources—so that new residents can seamlessly integrate into the community.
+    </ol>
+</blockquote>
+
+<b class="lead><strong>Problem-Resolution</strong>:</b>
+We believe Brookline can strike a meaningful balance between providing much-needed affordable housing and maintaining the unique visual vernacular of Brookline's built environment.
+We can do this by considering density that complements the character of our neighborhoods, rather than overwhelming or fundamentally changing them.
+Zoning changes should incorporate strategies for adaptive reuse of historic buildings, preserving our cultural and architectural heritage while still allowing for growth and development.
+<a href="https://www.brooklinema.gov/1299/Housing-Production-Plan">Mixed-use development</a> and infill projects can also help increase density without disrupting the character of our neighborhoods, and we plan to support policies that will help Brookline do just that!
+
+You can check out more details on the <a href="https://www.brooklinema.gov/1299/Housing-Production-Plan">Town’s website</a>.
