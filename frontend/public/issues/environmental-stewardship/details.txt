@@ -8,7 +8,7 @@ Working alongside our community partners, we know we can realize this vision by 
 
 We have three pivotal tools that will help us build the future we all want to see in Brookline:
 
-<b>Comprehensive Planning</b>
+<b class="clear">Comprehensive Planning</b>
 
 <img src="/img/issues/rose-garden-skate.jpeg" class="img-2">
 
