@@ -22,9 +22,6 @@ import { CommonModule } from '@angular/common';
           @for (paragraph of card.text$ | async; track paragraph) {
             <p class="card-text" [innerHTML]="paragraph"></p>
           }
-          <h4 class="text-center" style="font-size:1.1rem;font-weight:bold">
-            Vote for the Precinct 2 Slate, by Voting for <i>ALL FIVE</i> Candidates, Tuesday, May 6th!
-          </h4>
         </p2-card>
       }
     </div>
