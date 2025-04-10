@@ -49,7 +49,7 @@ export class LandingComponent {
   readonly cards = [
     {
       title: 'Who We Are',
-      // link: 'candidates',
+      link: 'candidates',
       image: 'img/main/IMG_6742.jpeg',
       text$: this.content.fetch('main/meet-the-candidates.txt'),
     },
