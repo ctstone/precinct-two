@@ -15,7 +15,7 @@ import { Router, RouterModule } from '@angular/router';
         </button>
         <div #menu class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" [class.show]="menuVisible()">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Precinct 2</h5>
+            <h5 class="offcanvas-title" id="offcanvasLabel" style="color: var(--h4-color)">Precinct 2</h5>
             <button type="button" class="btn-close" aria-label="Close" (click)="menuVisible.set(false)"></button>
           </div>
           <div class="offcanvas-body">

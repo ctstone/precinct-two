@@ -15,16 +15,19 @@ import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
               Support Your 2025 Precinct 2 Slate!
             </h4>
             <p class="card-text">
-              We are your 2025 Precinct 2 Representative Slate, running for the five open Town Meeting Member seats. Town Meeting is made up of 255 elected members from 17 precincts, plus the Select Board, Town Moderator, Town Clerk, and our state representatives and senators who live right here in Brookline.
+              We are your <b>2025 Precinct 2 Representative Slate</b>, running for the <b>five open Town Meeting seats</b>. <a href="https://www.brooklinema.gov/264/Town-Meeting">Town Meeting</a> is made up of 255 elected members from <a href="https://www.brooklinema.gov/DocumentCenter/View/1362/Precincts-8x11-PDF">17 precincts</a>, plus the Select Board, <a href="https://www.brooklinema.gov/1724/Moderator">Town Moderator</a>, <a href="https://www.brooklinema.gov/1724/Moderator">Town Clerk</a>, and our <a href="https://www.brooklinema.gov/135/State-and-Federal-Elected-Officials">state representatives and senators</a> who live right here in Brookline.
             </p>
             <p class="card-text">
-              <b>Your support can make a real difference!</b> By donating today, you’re helping us work toward a future where everyone in Brookline has the resources and opportunities to thrive. Every contribution–no matter how small–helps us get closer to this goal.
+              <b>Your support can make a real difference!</b> By donating today, you’re helping us work toward a future where everyone in Brookline has the resources and opportunities needed to thrive. Every contribution–no matter how small–helps us get closer to this goal.
+            </p>
+            <p class="card-test">
+              <b>Join us in creating a brighter future for Brookline.</b>
             </p>
             <p class="card-text">
-              Brookline’s financial future depends on the choices we make today. Help us build a path to increasing housing affordability, raising revenue for our schools, and promoting fiscal responsibility, while also preserving the things we love most about our beloved community.
+              To make this a reality, we believe Brookline needs strong, inclusive leadership to address the urgent challenges we face. We’re the team ready to fight for more affordable housing, support policies to protect our most vulnerable residents and neighbors, and promote a healthy environment that benefits everyone.
             </p>
             <p class="card-text">
-              <b style="color:#c33c3a">Vote for the Precinct 2 Slate, by Voting for <i>ALL FIVE</i> Candidates, Tuesday, May 6th!</b>
+              <b style="color:#c33c3a">Vote for the Precinct 2 Slate, by Voting for ALL FIVE Candidates, Tuesday, May 6th!</b>
             </p>
           </div>
         </div>
