@@ -33,7 +33,9 @@ import { RouterModule } from '@angular/router';
             <ng-content />
             @if (link(); as link) {
               <div class="card-text">
-                <a [routerLink]="link" class="btn btn-primary" style="background-color: inherit; border-color: var(--background-color)">Learn More</a>
+                <a [routerLink]="link" class="btn btn-primary" style="background-color: inherit; border-color: var(--background-color)">
+                  {{linkText() ?? "Learn More"}}
+                </a>
               </div>
             }
           </div>
@@ -50,11 +52,16 @@ import { RouterModule } from '@angular/router';
         color: #5c84ae;
       }
     }
+    .btn {
+      background-color: red;
+      border-color: var(--background-color);
+    }
   `
 })
 export class CardComponent {
   readonly cardTitle = input.required<string>();
   readonly link = input<string>();
+  readonly linkText = input<string | undefined>();
   readonly cardId = input<string>();
   readonly image = input.required<string>();
   readonly imageWidth = input(6);

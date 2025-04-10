@@ -8,7 +8,7 @@ import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
   imports: [FormsModule, ReactiveFormsModule],
   template: `
     <div class="container">
-      <div class="row my-3">
+      <div class="row my-3 d-flex">
         <div class="card p-2 col-md-6">
           <div class="card-body">
             <h4 class="card-title" style="font-weight: bold;">
@@ -18,17 +18,17 @@ import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
               We are your 2025 Precinct 2 Representative Slate, running for the five open Town Meeting Member seats. Town Meeting is made up of 255 elected members from 17 precincts, plus the Select Board, Town Moderator, Town Clerk, and our state representatives and senators who live right here in Brookline.
             </p>
             <p class="card-text">
-              This election is mission-critical—Brookline’s financial future depends on the choices we make today. Together, we can build a responsible, inclusive, and thriving Brookline for all.
-            </p>
-            <p class="card-text">
               <b>Your support can make a real difference!</b> By donating today, you’re helping us work toward a future where everyone in Brookline has the resources and opportunities to thrive. Every contribution–no matter how small–helps us get closer to this goal.
             </p>
             <p class="card-text">
-              <b>Join us in creating a brighter future for Brookline. Together, we will work to build an active, dynamic, and sustainable Brookline, where thriving businesses and homes for all incomes are seamlessly integrated with the natural environment!</b>
+              Brookline’s financial future depends on the choices we make today. Help us build a path to increasing housing affordability, raising revenue for our schools, and promoting fiscal responsibility, while also preserving the things we love most about our beloved community.
+            </p>
+            <p class="card-text">
+              <b style="color:#c33c3a">Vote for the Precinct 2 Slate, by Voting for <i>ALL FIVE</i> Candidates, Tuesday, May 6th!</b>
             </p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 donation">
           <div class="donation-amount-list justify-content-between">
             @for (amount of amounts; track amount) {
               <button class="rounded-2 donation-amount flex-grow-1" [class.active]="selectedAmount() == amount" (click)="updateAmount(amount)">\${{amount / 100}}</button>
@@ -100,6 +100,21 @@ import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
       &.active {
         background-color: var(--bs-success);
         border-color: var(--bs-success);
+      }
+    }
+    .donation {
+      order: 1
+    }
+    .card {
+      order:2
+    }
+    @media (min-width: 768px) {
+      .donation {
+        order: 2;
+        margin: 0;
+      }
+      .card {
+        order: 1
       }
     }
   `

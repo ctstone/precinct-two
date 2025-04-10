@@ -54,7 +54,7 @@ export class NavbarComponent {
   readonly links = [
     { name: 'Meet the Candidates', icon: 'fa-duotone fa-regular fa-face-smile-hearts fa-beat', id: 'candidates', /*path: 'candidates'*/ },
     { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', id: 'challenges-ahead', path: 'challenges-ahead' },
-    { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', id: 'endorsements', /*path: 'endorsements'*/ },
+    // { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', id: 'endorsements', /*path: 'endorsements'*/ },
     { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', id: 'voting', path: 'voting' },
   ];
 
