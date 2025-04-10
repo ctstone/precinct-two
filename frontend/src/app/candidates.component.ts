@@ -27,13 +27,13 @@ interface Candidate {
             <p class="card-text" [innerHTML]="paragraph"></p>
           }
 
-          <p class="card-link text-center">
+          <!-- <p class="card-link text-center">
             @for (social of socials | keyvalue; track social.key) {
               @if (candidate.socials.get(social.key); as socialLink) {
                 <a [href]="socialLink" class="me-2 social-link"><i class="fa-brands {{socials.get(social.key)}}"></i></a>
               }
             }
-          </p>
+          </p> -->
         </p2-card>
       }
     </div>
