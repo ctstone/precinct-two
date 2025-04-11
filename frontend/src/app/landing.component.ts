@@ -31,6 +31,19 @@ import { ContentService } from './content.service';
           }
         </p2-card>
       }
+
+      <div class="card my-3 p-2">
+        <div class="card-body text-muted">
+        <h4 class="card-title" style="font-weight: bold;">Endorsements</h4>
+          <p class="card-text">
+            @for (endorsement of endorsements; track endorsement.name) {
+              <a [href]="endorsement.link">
+                <img src="img/main/{{endorsement.img}}" alt="{{endorsement.name}}" class="img-fluid me-4" style="max-width: 200px; max-height: 200px;" />
+              </a>
+            }
+          </p>
+        </div>
+      </div>
     </div>
   `
 })
@@ -45,10 +58,15 @@ export class LandingComponent {
     { name: 'Megan Hinman', id: 'megan' }
   ];
 
+  readonly endorsements = [
+    { name: 'Brookline for Everyone', img: 'b4e.png', link: 'https://www.brooklineforeveryone.org/' },
+    { name: 'Brookline Equity Coalition', img: 'bec.png', link: 'https://www.brooklineequitycoalition.org/' },
+  ]
+
   readonly cards = [
     {
       title: 'Who We Are',
-      // link: 'candidates',
+      link: 'candidates',
       image: 'img/main/IMG_6742.jpeg',
       text$: this.content.fetch('main/meet-the-candidates.txt'),
     },
