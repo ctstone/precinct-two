@@ -56,6 +56,7 @@ export class NavbarComponent {
     { name: 'Challenges Ahead', icon: 'fa-duotone fa-solid fa-building-columns', id: 'challenges-ahead', path: 'challenges-ahead' },
     // { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', id: 'endorsements', /*path: 'endorsements'*/ },
     { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', id: 'voting', path: 'voting' },
+    { name: 'News', icon: 'fa-duotone fa-solid fa-newspaper', id: 'news', path: 'news' },
   ];
 
   constructor() {
