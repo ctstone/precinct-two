@@ -1,7 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
-import { StripeService } from '../stripe.service';
 import { PaymentIntent, StripeError } from '@stripe/stripe-js';
 import { RouterModule } from '@angular/router';
+import { StripeService } from './stripe.service';
 
 @Component({
   selector: 'p2-thanks',
