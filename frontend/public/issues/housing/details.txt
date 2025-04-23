@@ -36,10 +36,10 @@ On November 14, 2023, 84% of Town Meeting Members voted to pass Brookline’s <a
         <dt>Here’s what the article proposes:</dt>
         <dd>
             <ul>
-                <li>New Zoning Changes: It will create a new zoning district that allows multi-family housing in existing areas designated for that purpose.
-                <li>Emerald Island District: It will make it easier to add more multi-family units in the Emerald Island district to boost housing options.
-                <li>Walnut and High Streets: It proposes new, affordable housing at the Brookline Housing Authority’s property on Walnut and High Streets.
-                <li>Harvard Street: It will create new zoning for multi-family homes along Harvard Street, supporting our growing commercial corridor.
+                <li>New Zoning Changes: It will create a new zoning district that allows multi-family housing in existing areas designated for that purpose
+                <li>Emerald Island District: It will make it easier to add more multi-family units in the Emerald Island district to boost housing options
+                <li>Walnut and High Streets: It proposes new, affordable housing at the Brookline Housing Authority’s property on Walnut and High Streets
+                <li>Harvard Street: It will create new zoning for multi-family homes along Harvard Street, supporting our growing commercial corridor
             </ul>
         </dd>
         <dt>Affordable Housing By-Law Update</dt>
@@ -62,9 +62,9 @@ To do this, we believe that any new housing initiatives we consider must center 
 <blockquote class="ms-5">
     <b>We can do this in three key ways:</b>
     <ol>
-        <li>By encouraging density near transit hubs and essential services, we can prevent further displacement and segregation along racial and economic lines.
-        <li>By ensuring marginalized groups are equally represented in the decision-making process at the highest level of our town government and particularly, with regard to housing development.
-        <li>By creating necessary support infrastructures—such as equitable access to education and other crucial resources—so that new residents can seamlessly integrate into the community.
+        <li>By encouraging density near transit hubs and essential services, we can prevent further displacement and segregation along racial and economic lines
+        <li>By ensuring marginalized groups are equally represented in the decision-making process at the highest level of our town government and particularly, with regard to housing development
+        <li>By creating necessary support infrastructures—such as equitable access to education and other crucial resources—so that new residents can seamlessly integrate into the community
     </ol>
 </blockquote>
 

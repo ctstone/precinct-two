@@ -25,7 +25,7 @@ import { ContentService } from './content.service';
 
     <div class="container">
       @for (card of cards; track card.title; let i = $index) {
-        <p2-card [cardTitle]="card.title" [link]="card.link" [linkText]="card.linkText" [image]="card.image" [stagger]="i % 2 === 1" [imageWidth]="card.imageWidth ?? 6" >
+        <p2-card [cardTitle]="card.title" [link]="card.link" [linkText]="card.linkText" [image]="card.image" [stagger]="i % 2 === 1" [imageWidth]="card.imageWidth ?? 6" [enableReadMoreLink]="card.enableReadMoreLink ?? true">
           @for (paragraph of card.text$ | async; track paragraph) {
             <p class="card-text" [innerHTML]="paragraph"></p>
           }
@@ -69,6 +69,7 @@ export class LandingComponent {
       link: 'candidates',
       image: 'img/main/IMG_6742.jpeg',
       text$: this.content.fetch('main/meet-the-candidates.txt'),
+      enableReadMoreLink: false,
     },
     {
       title: 'The Challenges Ahead',

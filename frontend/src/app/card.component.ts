@@ -32,11 +32,13 @@ import { RouterModule } from '@angular/router';
             </h4>
             <ng-content />
             @if (link(); as link) {
-              <div class="card-text">
-                <a [routerLink]="link" class="btn btn-primary" style="background-color: inherit; border-color: var(--background-color)">
-                  {{linkText() ?? "Learn More"}}
-                </a>
-              </div>
+              @if (enableReadMoreLink()) {
+                <div class="card-text">
+                  <a [routerLink]="link" class="btn btn-primary" style="background-color: inherit; border-color: var(--background-color)">
+                    {{linkText() ?? "Learn More"}}
+                  </a>
+                </div>
+              }
             }
           </div>
         </div>
@@ -67,5 +69,6 @@ export class CardComponent {
   readonly imageWidth = input(6);
   readonly imageCredit = input<string>();
   readonly stagger = input(false);
-  readonly textWidth= computed(() => 12 - this.imageWidth());
+  readonly textWidth = computed(() => 12 - this.imageWidth());
+  readonly enableReadMoreLink = input(true);
 }
