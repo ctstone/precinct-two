@@ -32,7 +32,7 @@ import { RouterModule } from '@angular/router';
             <br>There is no reason for our schools and community services to be in the shape they’re in — except for a <b>failure of leadership</b>. 71% of Brookline’s revenue comes from real estate taxes. Yet under the incumbents’ so-called ‘experience,’ instead of embracing smart growth, we’ve seen
             <a href="https://brookline.news/town-meeting-votes-to-put-biggest-zoning-changes-on-ice/">stagnation</a>
             and
-            <a href="https://brookline.news/town-officials-seek-greater-oversight-of-school-finances-amid-budget-crisis/">loss</a> — and a consistent pattern of <a href="https://thelocallens.org/brookline-select-board-faces-school-budget-crisis-amid-privatization-concerns/">choosing cuts</a> over <a href="https://www.brooklinema.gov/3716/Chestnut-Hill-Commercial-Area-Study">increasing revenue</a>.
+            <a href="https://brookline.news/town-officials-seek-greater-oversight-of-school-finances-amid-budget-crisis/">loss</a> — and a consistent pattern of <a href="https://brookline.news/district-leaders-propose-sweeping-cuts-to-address-8-million-school-budget-deficit/">choosing cuts</a> over <a href="https://www.brooklinema.gov/3716/Chestnut-Hill-Commercial-Area-Study">increasing revenue</a>.
           </p>
           <p class="card-text">
             Town Meeting incumbents have known since at least the <a href="https://www.brooklinema.gov/DocumentCenter/View/21168/February-5-Final-BFAC-Report">2020 Brookline Fiscal Advisory Committee’s final report</a> how to responsibly add new tax revenue to our bottom line: by allowing increased economic development on Brookline’s large sites and along our transit corridors. Yet despite ample resources and
