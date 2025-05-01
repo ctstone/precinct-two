@@ -9,6 +9,7 @@ import { IssueComponent } from './issue.component';
 import { IssuesInfoComponent } from './issues-info.component';
 import { ThanksComponent } from './thanks.component';
 import { NewsComponent } from './news.component';
+import { OpenLetterComponent } from './open-letter.component';
 
 export const routes: Routes = [
     { path: '', pathMatch: 'full', component: LandingComponent },
@@ -52,5 +53,6 @@ export const routes: Routes = [
         ]
     },
     // { path: 'privacy', component: PrivacyComponent },
-    { path: 'theme', component: ThemeComponent },
+    // { path: 'theme', component: ThemeComponent },
+    { path: 'open-letter', component: OpenLetterComponent },
 ];

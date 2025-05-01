@@ -57,6 +57,7 @@ export class NavbarComponent {
     // { name: 'Endorsements', icon: 'fa-duotone fa-solid fa-badge-check', id: 'endorsements', /*path: 'endorsements'*/ },
     { name: 'Voting', icon: 'fa-duotone fa-solid fa-check-to-slot', id: 'voting', path: 'voting' },
     { name: 'News', icon: 'fa-duotone fa-solid fa-newspaper', id: 'news', path: 'news' },
+    { name: 'Open Letter', icon: 'fa-duotone fa-solid fa-envelope', id: 'letter', path: 'open-letter' },
   ];
 
   constructor() {
